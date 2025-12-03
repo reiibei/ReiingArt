@@ -57,7 +57,7 @@
 			<!-- <a
 				href="https://reiing.art"
 				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
-				target="_blank"
+				target="_blank" a
 			>
 				<HugeiconsIcon icon={TwitterFreeIcons} size="fit" strokeWidth={1.5} />
 			</a> -->
