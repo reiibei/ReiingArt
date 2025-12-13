@@ -3,8 +3,8 @@
 	import {
 		BlushBrush02FreeIcons,
 		StarIcon,
-		FolderFavouriteIcon,
-		Honey01FreeIcons
+		StarsIcon,
+		FolderFavouriteIcon
 	} from '@hugeicons/core-free-icons';
 
 	import clsx from 'clsx';
@@ -12,12 +12,51 @@
 
 	const sectionNames: Record<string, string> = {
 		intro: 'About',
-		prj: 'Projects',
+		exp: 'Experience',
 		comm: 'Commissions'
 	};
 	// make a variable to store which thing to show
 	let sectionDisplay = $state('intro');
 	let mobileMenu = $state(false);
+
+	const experiences = [
+		{
+			id: 'ToyboxTumble',
+			name: 'Toybox Tumble',
+			role: 'Creative & Design Director',
+			date: 'May 2025 - Present'
+		},
+		{
+			id: 'DPCP',
+			name: 'DupCup (TETR.IO)',
+			role: 'Event Aesthetic & Promotional Artist',
+			date: 'Feb 2025 - Present'
+		},
+		{
+			id: 'SSL',
+			name: 'Super Streamer Lobby (TETR.IO)',
+			role: 'Gamemode & Merchandise Illustrator',
+			date: 'Apr 2024 - Present'
+		},
+		{
+			id: 'Freelance',
+			name: 'Freelance Multidisciplinary Artist',
+			role: 'Illustrator, Animator & Visual Designer',
+			date: 'May 2023 - Present'
+		},
+		{
+			id: 'Intern1',
+			name: 'Lucky Mall MY',
+			role: 'Graphic Design Intern',
+			date: 'Sept 2025 - Dec 2025'
+		},
+		{
+			id: 'Diploma',
+			name: 'Asia Pacific University of Technology and Innovation',
+			role: 'Diploma in Media and Design (Animation)',
+			date: 'Aug 2023 - Aug 2025'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -42,12 +81,12 @@
 		<button
 			class={clsx([
 				'flex items-center gap-2 border-r-2 border-translucent px-2 whitespace-nowrap hover:cursor-pointer',
-				sectionDisplay == 'prj' ? 'text-pinklucent' : 'text-pale hover:text-pink'
+				sectionDisplay == 'exp' ? 'text-pinklucent' : 'text-pale hover:text-pink'
 			])}
 			onclick={() => {
-				sectionDisplay = 'prj';
+				sectionDisplay = 'exp';
 			}}
-			>{sectionNames['prj']}<HugeiconsIcon
+			>{sectionNames['exp']}<HugeiconsIcon
 				icon={FolderFavouriteIcon}
 				size="15"
 				strokeWidth={2}
@@ -68,61 +107,42 @@
 			/></button
 		>
 	</div>
-	{#if sectionDisplay == 'intro'}
-		<p class="mx-auto h-80 w-11/12">
-			stuff about reii stuff about reii stuff about reii stuff about reii stuff about reii stuff
-			about reii stuff about reii stuff about reii stuff about reii stuff about reii stuff about
-			reii stuff about reii stuff about reii stuff about reii
-		</p>
-	{:else if sectionDisplay == 'prj'}
-		<div class="flex h-80 w-11/12 flex-col">
-			<div id="ToyboxTumble" class="mb-4 flex flex-col">
-				<div class="flex flex-row items-center text-lg">
-					<p class="flex justify-start whitespace-nowrap">Toybox Tumble</p>
-					<hr class="mx-2 flex w-full border-dashed border-yellucent" />
-					<p
-						class="w-fit justify-center font-lato text-xs whitespace-nowrap text-translucent italic"
-					>
-						May 2025 - Present
-					</p>
-					<hr class="mx-2 flex w-full border-dashed border-yellucent" />
-					<p class="flex justify-end whitespace-nowrap text-yellow">Design Director</p>
-				</div>
-			</div>
 
-			<div id="DPCP" class="mb-4 flex flex-col">
-				<div class="flex flex-row items-center text-lg">
-					<p class="flex justify-start whitespace-nowrap">DupCup (TETR.IO)</p>
-					<hr class="mx-2 flex w-full border-dashed border-yellucent" />
-					<p
-						class="w-fit justify-center font-lato text-xs whitespace-nowrap text-translucent italic"
-					>
-						Feb 2025 - Present
-					</p>
-					<hr class="mx-2 flex w-full border-dashed border-yellucent" />
-					<p class="flex justify-end whitespace-nowrap text-yellow">
-						Event Aesthetic & Promotional Artist
-					</p>
-				</div>
-			</div>
+	<div class="flex min-h-85 items-start justify-center w-full">
+		{#if sectionDisplay == 'intro'}
+			<p class="mx-auto w-11/12">
+				stuff about reii stuff about reii stuff about reii stuff about reii stuff about reii stuff
+				about reii stuff about reii stuff about reii stuff about reii stuff about reii stuff about
+				reii stuff about reii stuff about reii stuff about reii
+			</p>
+		{:else if sectionDisplay == 'exp'}
+			<div class="flex w-11/12 flex-col">
+				{#each experiences as exp}
+					<div id={exp.id} class="mb-4 flex flex-col">
+						<div class="flex flex-row items-center">
+							<p class="flex flex-col text-left whitespace-nowrap">
+								<span class="text-2xl font-bold">{exp.name}</span>
+								<span class="text-lg text-yellow">{exp.role}</span>
+							</p>
 
-			<div id="SSL" class="mb-4 flex flex-col">
-				<div class="flex flex-row items-center text-lg">
-					<p class="flex justify-start whitespace-nowrap">Super Streamer Lobby (TETR.IO)</p>
-					<hr class="mx-2 flex justify-center border-dashed border-yellucent" />
-					<p class="font-lato text-xs whitespace-nowrap text-translucent italic">
-						Apr 2024 - Present
-					</p>
-					<hr class="mx-2 flex justify-center border-dashed border-yellucent" />
-					<p class="flex justify-end whitespace-nowrap text-yellow">Gamemode Illustrator</p>
-				</div>
+							<hr class="mr-2 ml-8 w-full items-center border-dashed border-yellucent" />
+
+							<p
+								class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
+							>
+								<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
+								{exp.date}
+							</p>
+						</div>
+					</div>
+				{/each}
 			</div>
-		</div>
-	{:else if sectionDisplay == 'comm'}
-		<p class="mx-auto h-80 w-11/12">
-			reii is broke reii is broke reii is broke reii is broke reii is broke reii is broke reii is
-			broke reii is broke reii is broke reii is broke reii is broke reii is broke reii is broke reii
-			is broke reii is broke reii is broke reii is broke reii is broke
-		</p>
-	{/if}
+		{:else if sectionDisplay == 'comm'}
+			<p class="mx-auto w-11/12">
+				reii is broke reii is broke reii is broke reii is broke reii is broke reii is broke reii is
+				broke reii is broke reii is broke reii is broke reii is broke reii is broke reii is broke
+				reii is broke reii is broke reii is broke reii is broke reii is broke
+			</p>
+		{/if}
+	</div>
 </div>
