@@ -1,15 +1,19 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+
+	import { page } from '$app/state';
+	import { slide } from 'svelte/transition';
+
+	import clsx from 'clsx';
+
 	import { HugeiconsIcon } from '@hugeicons/svelte';
 	import {
-		DiscordFreeIcons,
 		TwitchFreeIcons,
-		YoutubeFreeIcons,
+		DiscordFreeIcons,
 		TwitterFreeIcons,
 		BlueskyFreeIcons,
-		InstagramFreeIcons,
-		KoFiFreeIcons
+		InstagramFreeIcons
 	} from '@hugeicons/core-free-icons';
 
 	let { children } = $props();
@@ -19,69 +23,92 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<header class="font-mochi">
-	<p class="text-2xl">Aphra (Reii) Ng</p>
-	<p class="text-md">Visual Storyteller & Designer | Part-Time ReiiBei</p>
-	<p class="text-sm">Drafting dreams into reality</p>
+<header class="flex flex-col items-center justify-center p-1 text-center">
+	{#if page.route.id == '/'}
+		<div transition:slide={{ axis: 'y', duration: 500 }} class="flex flex-row items-center gap-6">
+			<div class="flex flex-col">
+				<p class="font-boom text-2xl">Hey, I'm Reii!</p>
+				<p>Visual Storyteller & Designer | Part-Time Streamer</p>
+				<p class="text-sm text-translucent">༻ a little cosy and a whole lotta chaos ༺</p>
+			</div>
+			<img
+				src="https://i.imgur.com/YcDK5ZD.png"
+				class="aspect-square size-20 rounded-full object-cover"
+				alt="reii"
+			/>
+		</div>
+	{/if}
+	<div class="mt-2 flex flex-row gap-2">
+		<a
+			href="/"
+			class={clsx([
+				'w-20 cursor-pointer rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/' ? 'border-pink text-pink' : 'border-pale '
+			])}>Home</a
+		>
+		<a
+			href="/portfolio"
+			class={clsx([
+				'w-20 cursor-pointer rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/portfolio' ? 'border-pink text-pink' : 'border-pale '
+			])}>Portfolio</a
+		>
+	</div>
 </header>
-<p>this is a line thingy</p>
+
+<hr class="mx-auto my-4 w-11/12 border-translucent" />
 
 {@render children()}
 
-<p>this is a line thingy</p>
-<footer>
-	<p class="font-lato">fancy text about ip</p>
-	<div class="flex flex-col">
-		<div class="flex flex-row items-center justify-center">
+<hr class="mx-auto my-4 w-11/12 border-translucent" />
+
+<footer class="mx-auto flex w-11/12 flex-row items-center justify-center gap-10">
+	<div class="flex flex-col items-center justify-center gap-1">
+		<div class="flex flex-row gap-2">
 			<a
-				href="https://reiing.art"
-				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
+				href="https://twitch.tv/reiibei"
+				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
+			>
+				<HugeiconsIcon icon={TwitchFreeIcons} size="fit" strokeWidth={1.5} />
+			</a>
+			<a
+				href="https://discord.com/invite/rQudKfzSZT"
+				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
 				target="_blank"
 			>
 				<HugeiconsIcon icon={DiscordFreeIcons} size="fit" strokeWidth={1.5} />
 			</a>
 			<a
-				href="https://reiing.art"
-				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
-				target="_blank"
-			>
-				<HugeiconsIcon icon={TwitchFreeIcons} size="fit" strokeWidth={1.5} />
-			</a>
-			<a
-				href="https://reiing.art"
-				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
-				target="_blank"
-			>
-				<HugeiconsIcon icon={YoutubeFreeIcons} size="fit" strokeWidth={1.5} />
-			</a>
-			<!-- <a
-				href="https://reiing.art"
-				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
-				target="_blank" a
-			>
-				<HugeiconsIcon icon={TwitterFreeIcons} size="fit" strokeWidth={1.5} />
-			</a> -->
-			<a
-				href="https://reiing.art"
-				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
+				href="https://bsky.app/profile/reiing.art"
+				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
 				target="_blank"
 			>
 				<HugeiconsIcon icon={BlueskyFreeIcons} size="fit" strokeWidth={1.5} />
 			</a>
-			<!-- <a
-				href="https://reiing.art"
-				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
+			<a
+				href="https://x.com/reiingart"
+				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
+				target="_blank"
+			>
+				<HugeiconsIcon icon={TwitterFreeIcons} size="fit" strokeWidth={1.5} />
+			</a>
+			<a
+				href="https://instagram.com/reiingart"
+				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
 				target="_blank"
 			>
 				<HugeiconsIcon icon={InstagramFreeIcons} size="fit" strokeWidth={1.5} />
-			</a> -->
-			<a
-				href="https://ko-fi.com/reiingart"
-				class="m-1 flex size-12 items-center justify-center rounded-full border-3 border-pink p-1.5 text-pink"
-				target="_blank"
-			>
-				<HugeiconsIcon icon={KoFiFreeIcons} size="fit" strokeWidth={1.5} />
 			</a>
 		</div>
+		<p class="mt-0.5 flex text-lg whitespace-nowrap text-pink">
+			Contact / 询问 ⊹ reiing.art@gmail.com
+		</p>
+	</div>
+
+	<div class="text-center">
+		<p>Copyright © 2025 ReiingArt</p>
+		<p class="flex items-center justify-center text-xs whitespace-nowrap text-translucent italic">
+			eternally cosy, embracing chaos
+		</p>
 	</div>
 </footer>

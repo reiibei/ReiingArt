@@ -10,22 +10,85 @@
 
 @font-face {
 	font-family: 'Boom';
-	src: url('/fonts/MochiBoom.ttf') format('format');
+	src: url('/fonts/MochiBoom.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Lato';
-	src: url('/fonts/Lato-Regular.ttf') format('format');
+	src: url('/fonts/Lato-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @theme {
-	--font-mochi: 'Mochi';
 	--font-boom: 'Boom';
 	--font-lato: 'Lato';
+
+	--color-pale: #fff6f7;
+	--color-translucent: #fff6f775;
+
 	--color-pink: #ffaab4;
-	--default-font-family: Kose;
+	--color-pinklucent: #ffaab470;
+
+	--color-purple: #9371dc;
+	--color-purplucent: #9371dc75;
+
+	--color-blue: #8db2ef;
+	--color-blucent: #8db2ef75;
+
+	--color-yellow: #ffd471;
+	--color-yellucent: #ffd47170;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #fff6f7;
+	background-color: #19161f; /* #3e3a47 */
+
+	margin: 1rem;
+
+	font-family: 'Mochi';
+	font-size: medium;
+}
+
+img {
+	user-select: none;
+}
+
+::selection {
+	background-color: #ffaab485;
+}
+
+::-webkit-scrollbar {
+	width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #fcf0f0a5;
+	border-radius: 1rem;
+	border-left: 0.2rem solid;
+	border-top: 0.3rem solid;
+	border-bottom: 0.3rem solid;
+	border-right: 0.3rem solid;
+	border-color: transparent;
+	background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #fcf0f0;
+	border-left: 0.2rem solid;
+	border-top: 0.3rem solid;
+	border-bottom: 0.3rem solid;
+	border-right: 0.3rem solid;
+	border-color: transparent;
+	background-clip: padding-box;
 }
