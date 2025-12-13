@@ -25,17 +25,17 @@
 
 <header class="flex flex-col items-center justify-center p-1 text-center">
 	{#if page.route.id == '/'}
-		<div transition:slide={{ axis: 'y', duration: 500 }} class="flex flex-row items-center gap-6">
+		<div transition:slide={{ axis: 'y', duration: 500 }} class="flex flex-row items-center gap-3">
+			<img
+				src="https://i.imgur.com/EkrhQ2D.png"
+				class="aspect-square size-25 object-cover"
+				alt="reii"
+			/>
 			<div class="flex flex-col">
 				<p class="font-boom text-2xl">Hey, I'm Reii!</p>
 				<p>Visual Storyteller | Part-Time Streamer</p>
 				<p class="text-sm text-translucent">༻ a little cosy and a whole lotta chaos ༺</p>
 			</div>
-			<img
-				src="https://i.imgur.com/YcDK5ZD.png"
-				class="aspect-square size-20 rounded-full object-cover"
-				alt="reii"
-			/>
 		</div>
 	{/if}
 	<div class="mt-2 flex flex-row gap-2">
