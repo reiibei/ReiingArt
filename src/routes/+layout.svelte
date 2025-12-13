@@ -28,7 +28,7 @@
 		<div transition:slide={{ axis: 'y', duration: 500 }} class="flex flex-row items-center gap-6">
 			<div class="flex flex-col">
 				<p class="font-boom text-2xl">Hey, I'm Reii!</p>
-				<p>Visual Storyteller & Designer | Part-Time Streamer</p>
+				<p>Visual Storyteller | Part-Time Streamer</p>
 				<p class="text-sm text-translucent">༻ a little cosy and a whole lotta chaos ༺</p>
 			</div>
 			<img
