@@ -108,7 +108,7 @@
 		>
 	</div>
 
-	<div class="flex min-h-85 items-start justify-center w-full">
+	<div class="flex min-h-85 w-full items-start justify-center">
 		{#if sectionDisplay == 'intro'}
 			<p class="mx-auto w-11/12">
 				stuff about reii stuff about reii stuff about reii stuff about reii stuff about reii stuff
@@ -118,7 +118,7 @@
 		{:else if sectionDisplay == 'exp'}
 			<div class="flex w-11/12 flex-col">
 				{#each experiences as exp}
-					<div id={exp.id} class="mb-4 flex flex-col">
+					<div id={exp.id} class="mb-3 flex flex-col">
 						<div class="flex flex-row items-center">
 							<p class="flex flex-col text-left whitespace-nowrap">
 								<span class="text-2xl font-bold">{exp.name}</span>
@@ -138,11 +138,20 @@
 				{/each}
 			</div>
 		{:else if sectionDisplay == 'comm'}
-			<p class="mx-auto w-11/12">
-				reii is broke reii is broke reii is broke reii is broke reii is broke reii is broke reii is
-				broke reii is broke reii is broke reii is broke reii is broke reii is broke reii is broke
-				reii is broke reii is broke reii is broke reii is broke reii is broke
-			</p>
+			<div class="mx-auto flex w-11/12 flex-col items-center justify-center">
+				<div class="w-1/5 rounded-full border-2 border-dashed mb-3">
+					<p class="flex items-center justify-center p-1 text-2xl">
+						Commissions: <span class="mx-2 text-4xl font-bold text-yellow">OPEN</span>
+					</p>
+				</div>
+				<p>
+					Currently reworking portfolio so prices will be heavily discounted, join the <a
+						href="https://discord.com/invite/rQudKfzSZT"
+						target="_blank"
+						class="text-pink underline">Discord</a
+					> to send me a DM or shoot me on X/Instagram for more details
+				</p>
+			</div>
 		{/if}
 	</div>
 </div>
