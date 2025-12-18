@@ -26,11 +26,16 @@
 <header class="flex flex-col items-center justify-center p-1 text-center">
 	{#if page.route.id == '/'}
 		<div transition:slide={{ axis: 'y', duration: 500 }} class="flex flex-row items-center gap-3">
-			<img
-				src="https://i.imgur.com/EkrhQ2D.png"
+			
+			<object
+				data="$lib/assets/logo.svg"
+				type="svg"
+				title="logo"
 				class="aspect-square size-25 object-cover"
-				alt="reii"
-			/>
+			>
+				<img src="https://i.imgur.com/EkrhQ2D.png" alt="backup logo" />
+			</object>
+
 			<div class="flex flex-col">
 				<p class="font-boom text-2xl">Hey, I'm Reii!</p>
 				<p>Visual Storyteller | Part-Time Streamer</p>

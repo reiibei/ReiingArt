@@ -13,7 +13,7 @@
 	const sectionNames: Record<string, string> = {
 		intro: 'About',
 		exp: 'Experience',
-		comm: 'Commissions'
+		comm: 'Commission'
 	};
 	// make a variable to store which thing to show
 	let sectionDisplay = $state('intro');
@@ -60,7 +60,7 @@
 </script>
 
 <svelte:head>
-	<title>Hey, I'm Reii!</title>
+	<title>Reii Ng</title>
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center p-1 text-center">
@@ -110,10 +110,8 @@
 
 	<div class="flex min-h-85 w-full items-start justify-center">
 		{#if sectionDisplay == 'intro'}
-			<p class="mx-auto w-11/12">
-				stuff about reii stuff about reii stuff about reii stuff about reii stuff about reii stuff
-				about reii stuff about reii stuff about reii stuff about reii stuff about reii stuff about
-				reii stuff about reii stuff about reii stuff about reii
+			<p class="mx-auto w-11/12 text-translucent italic">
+				. . . website currently in construction . . .
 			</p>
 		{:else if sectionDisplay == 'exp'}
 			<div class="flex w-11/12 flex-col">
@@ -139,12 +137,7 @@
 			</div>
 		{:else if sectionDisplay == 'comm'}
 			<div class="mx-auto flex w-11/12 flex-col items-center justify-center">
-				<div class="w-1/5 rounded-full border-2 border-dashed mb-3">
-					<p class="flex items-center justify-center p-1 text-2xl">
-						Commissions: <span class="mx-2 text-4xl font-bold text-yellow">OPEN</span>
-					</p>
-				</div>
-				<p>
+				<p class="text-translucent italic">
 					Currently reworking portfolio so prices will be heavily discounted, join the <a
 						href="https://discord.com/invite/rQudKfzSZT"
 						target="_blank"
