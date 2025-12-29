@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
+	import Logo from '$lib/components/Logo.svelte';
 
 	import { page } from '$app/state';
 	import { slide } from 'svelte/transition';
@@ -26,17 +27,9 @@
 <header class="flex flex-col items-center justify-center p-1 text-center">
 	{#if page.route.id == '/'}
 		<div transition:slide={{ axis: 'y', duration: 500 }} class="flex flex-row items-center gap-3">
-			
-			<object
-				data="$lib/assets/logo.svg"
-				type="svg"
-				title="logo"
-				class="aspect-square size-25 object-cover"
-			>
-				<img src="https://i.imgur.com/EkrhQ2D.png" alt="backup logo" />
-			</object>
+			<Logo class="size-25" />
 
-			<div class="flex flex-col">
+			<div class="flex flex-col whitespace-nowrap">
 				<p class="font-boom text-2xl">Hey, I'm Reii!</p>
 				<p>Visual Storyteller | Part-Time Streamer</p>
 				<p class="text-sm text-translucent">༻ a little cosy and a whole lotta chaos ༺</p>
@@ -50,6 +43,13 @@
 				'w-20 cursor-pointer rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
 				page.route.id == '/' ? 'border-pink text-pink' : 'border-pale '
 			])}>Home</a
+		>
+		<a
+			href="/blog"
+			class={clsx([
+				'w-20 cursor-pointer rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/blog' ? 'border-pink text-pink' : 'border-pale '
+			])}>Blog</a
 		>
 		<a
 			href="/portfolio"
