@@ -46,7 +46,7 @@
 			class={clsx([
 				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
 				page.route.id == '/' ? 'border-pink text-pink' : 'border-pale '
-			])}><HugeiconsIcon icon={StarIcon} size="15" strokeWidth={1.5} /> Home</a
+			])}><HugeiconsIcon icon={StarIcon} size="15" strokeWidth={1.5} /> About</a
 		>
 		<a
 			href="/blog"

@@ -13,6 +13,7 @@
 				<div class="flex flex-row items-center">
 					<p class="flex flex-col text-left whitespace-nowrap">
 						<span class="text-2xl font-bold">{post.title}</span>
+						<span class="text-sm text-yellow">{post.description}</span>
 					</p>
 
 					<hr class="mr-2 ml-8 w-full items-center border-dashed border-yellucent" />
