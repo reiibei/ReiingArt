@@ -10,6 +10,11 @@
 
 	import { HugeiconsIcon } from '@hugeicons/svelte';
 	import {
+		StarIcon,
+		QuillWrite01Icon,
+		NoteIcon,
+		BlushBrush02Icon,
+		MoneySavingJarIcon,
 		TwitchFreeIcons,
 		DiscordFreeIcons,
 		BlueskyFreeIcons,
@@ -39,23 +44,37 @@
 		<a
 			href="/"
 			class={clsx([
-				'w-20 cursor-pointer rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
 				page.route.id == '/' ? 'border-pink text-pink' : 'border-pale '
-			])}>Home</a
+			])}><HugeiconsIcon icon={StarIcon} size="15" strokeWidth={1.5} /> Home</a
 		>
 		<a
 			href="/blog"
 			class={clsx([
-				'w-20 cursor-pointer rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
 				page.route.id == '/blog' ? 'border-pink text-pink' : 'border-pale '
-			])}>Blog</a
+			])}><HugeiconsIcon icon={QuillWrite01Icon} size="15" strokeWidth={1.5} /> Blog</a
+		>
+		<a
+			href="/experience"
+			class={clsx([
+				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/experience' ? 'border-pink text-pink' : 'border-pale '
+			])}><HugeiconsIcon icon={NoteIcon} size="15" strokeWidth={1.5} />Experience</a
 		>
 		<a
 			href="/portfolio"
 			class={clsx([
-				'w-20 cursor-pointer rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
 				page.route.id == '/portfolio' ? 'border-pink text-pink' : 'border-pale '
-			])}>Portfolio</a
+			])}><HugeiconsIcon icon={BlushBrush02Icon} size="15" strokeWidth={1.5} /> Portfolio</a
+		>
+		<a
+			href="/pricing"
+			class={clsx([
+				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/pricing' ? 'border-pink text-pink' : 'border-pale '
+			])}><HugeiconsIcon icon={MoneySavingJarIcon} size="15" strokeWidth={1.5} />Pricing</a
 		>
 	</div>
 </header>
