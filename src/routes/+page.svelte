@@ -19,7 +19,7 @@
 	let sectionDisplay = $state('intro');
 	let mobileMenu = $state(false);
 
-	const experiences = [
+	const current = [
 		{
 			id: 'ToyboxTumble',
 			name: 'Toybox Tumble',
@@ -43,7 +43,10 @@
 			name: 'Freelance Multidisciplinary Artist',
 			role: 'Illustrator, Animator & Visual Designer',
 			date: 'May 2023 - Present'
-		},
+		}
+	];
+
+	const complete = [
 		{
 			id: 'Intern1',
 			name: 'Lucky Mall MY',
@@ -115,12 +118,18 @@
 			</p>
 		{:else if sectionDisplay == 'exp'}
 			<div class="flex w-11/12 flex-col">
-				{#each experiences as exp}
-					<div id={exp.id} class="mb-3 flex flex-col">
+				<div class="flex flex-row items-center justify-center mb-2">
+					<hr class="w-full border-translucent"/>
+					<p class="text-translucent italic whitespace-nowrap mx-2">IN PROGRESS</p>
+					<hr class="w-full border-translucent"/>
+				</div>
+
+				{#each current as cur}
+					<div id={cur.id} class="mb-3 flex flex-col">
 						<div class="flex flex-row items-center">
 							<p class="flex flex-col text-left whitespace-nowrap">
-								<span class="text-2xl font-bold">{exp.name}</span>
-								<span class="text-lg text-yellow">{exp.role}</span>
+								<span class="text-2xl font-bold">{cur.name}</span>
+								<span class="text-lg text-yellow">{cur.role}</span>
 							</p>
 
 							<hr class="mr-2 ml-8 w-full items-center border-dashed border-yellucent" />
@@ -129,7 +138,33 @@
 								class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
 							>
 								<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
-								{exp.date}
+								{cur.date}
+							</p>
+						</div>
+					</div>
+				{/each}
+
+				<div class="flex flex-row items-center justify-center my-2">
+					<hr class="w-full border-translucent"/>
+					<p class="text-translucent italic whitespace-nowrap mx-2">COMPLETED</p>
+					<hr class="w-full border-translucent"/>
+				</div>
+
+				{#each complete as com}
+					<div id={com.id} class="mb-3 flex flex-col">
+						<div class="flex flex-row items-center">
+							<p class="flex flex-col text-left whitespace-nowrap">
+								<span class="text-2xl font-bold">{com.name}</span>
+								<span class="text-lg text-yellow">{com.role}</span>
+							</p>
+
+							<hr class="mr-2 ml-8 w-full items-center border-dashed border-yellucent" />
+
+							<p
+								class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
+							>
+								<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
+								{com.date}
 							</p>
 						</div>
 					</div>
