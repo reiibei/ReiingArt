@@ -1,25 +1,24 @@
 <script>
 	import { HugeiconsIcon } from '@hugeicons/svelte';
-	import { StarsIcon, TimeQuarterPassIcon, Time04Icon } from '@hugeicons/core-free-icons';
+	import {
+		YoutubeIcon,
+		StarsIcon,
+		TimeQuarterPassIcon,
+		Time04Icon
+	} from '@hugeicons/core-free-icons';
 
 	const current = [
+		{
+			id: 'WBB',
+			name: "Wylie's Blitz Battle",
+			role: '2D Game Artist & Animator',
+			date: 'Jan 2026 - Present'
+		},
 		{
 			id: 'ToyboxTumble',
 			name: 'Toybox Tumble',
 			role: 'Creative & Design Director',
 			date: 'May 2025 - Present'
-		},
-		{
-			id: 'DPCP',
-			name: 'DupCup (TETR.IO)',
-			role: 'Event Aesthetic & Promotional Artist',
-			date: 'Feb 2025 - Present'
-		},
-		{
-			id: 'SSL',
-			name: 'Super Streamer Lobby (TETR.IO)',
-			role: 'Gamemode & Merchandise Illustrator',
-			date: 'Apr 2024 - Present'
 		},
 		{
 			id: 'Freelance',
@@ -31,6 +30,18 @@
 
 	const complete = [
 		{
+			id: 'Poxial-2',
+			name: 'Poxial [YouTube]',
+			role: 'Thumbnail Asset Artist',
+			date: 'Dec 2025 - Jan 2026'
+		},
+		{
+			id: 'DPCP',
+			name: 'DupCup [TETR.IO]',
+			role: 'Event Aesthetic & Promotional Artist',
+			date: 'Feb 2025 - Jan 2026'
+		},
+		{
 			id: 'Intern1',
 			name: 'Lucky Mall MY',
 			role: 'Graphic Design Intern',
@@ -41,6 +52,19 @@
 			name: 'Asia Pacific University of Technology and Innovation',
 			role: 'Diploma in Media and Design (Animation)',
 			date: 'Aug 2023 - Aug 2025'
+		},
+		{
+			id: 'SSL',
+			name: 'Super Streamer Lobby [TETR.IO]',
+			role: 'Gamemode & Merchandise Illustrator',
+			date: 'Apr 2024 - Oct 2024'
+		},
+
+		{
+			id: 'Poxial-1',
+			name: 'Poxial [YouTube]',
+			role: 'Emoticon & Badge Artist',
+			date: 'Jan 2023 - Oct 2024'
 		}
 	];
 </script>
