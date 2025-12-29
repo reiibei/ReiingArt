@@ -1,38 +1,29 @@
-# sv
+# Reiing Art
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Guides from Josh :D
 
-## Creating a project
+**Markdown:**
 
-If you're seeing this, you've probably already done this step. Congrats!
+Markdown is a simple markup language (similar to HTML) in that it lets you add formatting to text with special characters (like `#`, `*`, etc.).
 
-```sh
-# create a new project in the current directory
-npx sv create
+There's lots of good cheat sheets out there but it's basically what's in discord so you probably already know most of the important ones. Markdown here in svelte is a lot more capable (like allowing HTML) so we can do more if we need to.
 
-# create a new project in my-app
-npx sv create my-app
-```
+**Svelte:**
 
-## Developing
+Any route in a svelte project that is wrapped with `[]` turns it into a variable. This means a url like `/about/[name]` will let you go to any page that is the format `/about/some_name`.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+So you could go to:
 
-```sh
-npm run dev
+- `/about/reii`
+- `/about/josh`
+- `/about/boi`
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+And they would all render the same page.
 
-## Building
+**Blog:**
 
-To create a production version of your app:
+3 Main parts:
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- MDX Files (markdown blog content) - stuff in the blog
+- Blog index (list of all posts) `/src/routes/blog/+page.svelte`
+- Blog page renderer (shows a specific blog post based on the URL) `/src/routes/blog/[slug]/+page.svelte`
