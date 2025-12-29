@@ -12,7 +12,6 @@
 	import {
 		TwitchFreeIcons,
 		DiscordFreeIcons,
-		TwitterFreeIcons,
 		BlueskyFreeIcons,
 		InstagramFreeIcons
 	} from '@hugeicons/core-free-icons';
@@ -89,13 +88,6 @@
 				target="_blank"
 			>
 				<HugeiconsIcon icon={BlueskyFreeIcons} size="fit" strokeWidth={1.5} />
-			</a>
-			<a
-				href="https://x.com/reiingart"
-				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
-				target="_blank"
-			>
-				<HugeiconsIcon icon={TwitterFreeIcons} size="fit" strokeWidth={1.5} />
 			</a>
 			<a
 				href="https://instagram.com/reiingart"
