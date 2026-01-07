@@ -48,7 +48,7 @@
 		},
 		{
 			id: 'Diploma',
-			name: 'Asia Pacific University of Technology and Innovation',
+			name: 'Asia Pacific University of Innovation and Technology',
 			role: 'Diploma in Media and Design (Animation)',
 			date: 'Aug 2023 - Aug 2025'
 		},
