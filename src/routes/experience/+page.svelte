@@ -1,7 +1,6 @@
 <script>
 	import { HugeiconsIcon } from '@hugeicons/svelte';
 	import {
-		YoutubeIcon,
 		StarsIcon,
 		TimeQuarterPassIcon,
 		Time04Icon
@@ -69,6 +68,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Experience</title>
+</svelte:head>
+
 <div class="flex min-h-100 w-full items-start justify-center">
 	<div class="flex w-11/12 flex-col">
 		<div class="mb-2 flex flex-row items-center justify-center text-translucent">
@@ -81,10 +84,10 @@
 				<div class="flex flex-row items-center">
 					<p class="flex flex-col text-left whitespace-nowrap">
 						<span class="text-2xl font-bold">{cur.name}</span>
-						<span class="text-lg text-yellow">{cur.role}</span>
+						<span class="text-yellow">{cur.role}</span>
 					</p>
 
-					<hr class="mr-2 ml-8 w-full items-center border-dashed border-yellucent" />
+					<hr class="mr-2 ml-8 w-full items-center border-dotted border-translucent" />
 
 					<p
 						class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
@@ -106,10 +109,10 @@
 				<div class="flex flex-row items-center">
 					<p class="flex flex-col text-left whitespace-nowrap">
 						<span class="text-2xl font-bold">{com.name}</span>
-						<span class="text-lg text-yellow">{com.role}</span>
+						<span class="text-yellow">{com.role}</span>
 					</p>
 
-					<hr class="mr-2 ml-8 w-full items-center border-dashed border-yellucent" />
+					<hr class="mr-2 ml-8 w-full items-center border-dotted border-translucent" />
 
 					<p
 						class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"

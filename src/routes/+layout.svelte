@@ -34,9 +34,9 @@
 			<Logo class="size-25" />
 
 			<div class="flex flex-col whitespace-nowrap">
-				<p class="font-boom text-2xl">Hey, I'm Reii!</p>
-				<p>Visual Storyteller | Part-Time Streamer</p>
-				<p class="text-sm text-translucent">༻ a little cosy and a whole lotta chaos ༺</p>
+				<p class="font-boom text-2xl text-pale">Hey, I'm <span class="text-pink">Reii</span>!</p>
+				<p class="text-sm text-translucent">Visual Storyteller | Part-Time Streamer</p>
+				<!-- <p class="text-sm text-translucent">༻ a little cosy and a whole lotta chaos ༺</p> -->
 			</div>
 		</div>
 	{/if}
@@ -124,7 +124,7 @@
 	<div class="text-center">
 		<p>Copyright © 2025 ReiingArt</p>
 		<p class="flex items-center justify-center text-xs whitespace-nowrap text-translucent italic">
-			eternally cosy, embracing chaos
+			༻ a little cosy and a whole lotta chaos ༺
 		</p>
 	</div>
 </footer>
