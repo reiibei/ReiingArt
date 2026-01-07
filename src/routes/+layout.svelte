@@ -44,37 +44,52 @@
 		<a
 			href="/"
 			class={clsx([
-				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
-				page.route.id == '/' ? 'border-pink text-pink' : 'border-pale '
-			])}><HugeiconsIcon icon={StarIcon} size="15" strokeWidth={1.5} /> About</a
+				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/' ? 'border-pinklucent text-pale' : 'border-translucent '
+			])}
+			><span class="text-yellow group-hover:text-pink"
+				><HugeiconsIcon icon={StarIcon} size="15" strokeWidth={1.5} /></span
+			> About</a
 		>
 		<a
 			href="/blog"
 			class={clsx([
-				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
-				page.route.id == '/blog' ? 'border-pink text-pink' : 'border-pale '
-			])}><HugeiconsIcon icon={QuillWrite01Icon} size="15" strokeWidth={1.5} /> Blog</a
+				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/blog' ? 'border-pinklucent text-pale' : 'border-translucent '
+			])}
+			><span class="text-yellow group-hover:text-pink"
+				><HugeiconsIcon icon={QuillWrite01Icon} size="15" strokeWidth={1.5} /></span
+			> Blog</a
 		>
 		<a
 			href="/experience"
 			class={clsx([
-				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
-				page.route.id == '/experience' ? 'border-pink text-pink' : 'border-pale '
-			])}><HugeiconsIcon icon={NoteIcon} size="15" strokeWidth={1.5} />Experience</a
+				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/experience' ? 'border-pinklucent text-pale' : 'border-translucent '
+			])}
+			><span class="text-yellow group-hover:text-pink"
+				><HugeiconsIcon icon={NoteIcon} size="15" strokeWidth={1.5} /></span
+			>Experience</a
 		>
 		<a
 			href="/portfolio"
 			class={clsx([
-				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
-				page.route.id == '/portfolio' ? 'border-pink text-pink' : 'border-pale '
-			])}><HugeiconsIcon icon={BlushBrush02Icon} size="15" strokeWidth={1.5} /> Portfolio</a
+				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/portfolio' ? 'border-pinklucent text-pale' : 'border-translucent '
+			])}
+			><span class="text-yellow group-hover:text-pink"
+				><HugeiconsIcon icon={BlushBrush02Icon} size="15" strokeWidth={1.5} /></span
+			> Portfolio</a
 		>
 		<a
 			href="/pricing"
 			class={clsx([
-				'flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
-				page.route.id == '/pricing' ? 'border-pink text-pink' : 'border-pale '
-			])}><HugeiconsIcon icon={MoneySavingJarIcon} size="15" strokeWidth={1.5} />Pricing</a
+				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/pricing' ? 'border-pinklucent text-pale' : 'border-translucent '
+			])}
+			><span class="text-yellow group-hover:text-pink"
+				><HugeiconsIcon icon={MoneySavingJarIcon} size="15" strokeWidth={1.5} /></span
+			>Pricing</a
 		>
 	</div>
 </header>
