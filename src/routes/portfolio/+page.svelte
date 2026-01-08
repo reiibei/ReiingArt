@@ -19,10 +19,10 @@
 
 <div class="mx-auto flex min-h-100 w-11/12 flex-col items-center gap-2">
 	<!-- aquarium date -->
-	<div class="group relative isolate flex aspect-150/25 w-full items-center justify-center">
+	<div class="group relative isolate flex aspect-6/1 w-full items-center justify-center">
 		<!-- width = 3 sizes -->
 		<enhanced:img
-			class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-30"
+			class="absolute inset-0 -z-10 size-full rounded-lg object-contain group-hover:opacity-20"
 			src="$lib/assets/aquarium-date.jpg?w=1280;640;400"
 			alt="aquarium date"
 		/>
@@ -30,7 +30,7 @@
 			<p class="text-2xl font-bold text-yellow">AQUARIUM DATE</p>
 			<div class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap">
 				<p>One of my largest pieces by far</p>
-				<p>15,000×2,500 of details and care</p>
+				<p>15,000×2,500 of details and care (๑ &gt; ᴗ &lt; ๑)</p>
 			</div>
 			<div class="flex flex-row items-center justify-center gap-1">
 				<a
@@ -48,19 +48,18 @@
 		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
 			<!-- width = 3 sizes -->
 			<enhanced:img
-				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-30"
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/poxmotes.png?w=1280;640;400"
 				alt="poxmotes"
 			/>
 			<div
 				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
 			>
-				<p class="text-2xl font-bold text-yellow">Sleeping Poxial</p>
+				<p class="text-2xl font-bold text-yellow">Poxmotes</p>
 				<div
 					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
 				>
-					<p>Two angles, two styles!</p>
-					<p>Full-body, thumbnail-ready assets</p>
+					<p>Discord, YouTube & Twitch compatible ദ്ദി(｡•̀ ᗜ&lt;)</p>
 				</div>
 				<div class="flex flex-row items-center justify-center gap-1">
 					<a
@@ -77,7 +76,7 @@
 		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
 			<!-- width = 3 sizes -->
 			<enhanced:img
-				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-30"
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/poxial-zz.png?w=1280;640;400"
 				alt="poxial zz"
 			/>
@@ -103,10 +102,12 @@
 		</div>
 
 		<!-- DPCP V2 -->
-		<div class="group relative isolate flex w-1/2 items-center justify-center">
+		<div
+			class="group relative isolate flex w-1/2 items-center justify-center rounded-lg border-2 border-dashed border-[#FFFAED85] "
+		>
 			<!-- width = 3 sizes -->
 			<enhanced:img
-				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-30"
+				class="absolute inset-0 -z-10 size-full object-contain p-1 group-hover:opacity-20"
 				src="$lib/assets/dpcp-still.png?w=1280;640;400"
 				alt="DupCup"
 			/>
@@ -117,7 +118,6 @@
 				<div
 					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
 				>
-					<p>Cityscape of Misdrop City</p>
 					<p>Designed for Dubstep298's TETR.IO event, DupCup</p>
 				</div>
 				<div class="flex flex-row items-center justify-center gap-1">
