@@ -15,10 +15,10 @@
 		NoteIcon,
 		BlushBrush02Icon,
 		MoneySavingJarIcon,
-		TwitchFreeIcons,
-		DiscordFreeIcons,
-		BlueskyFreeIcons,
-		InstagramFreeIcons
+		TwitchIcon,
+		DiscordIcon,
+		BlueskyIcon,
+		InstagramIcon
 	} from '@hugeicons/core-free-icons';
 
 	let { children } = $props();
@@ -107,28 +107,28 @@
 				href="https://twitch.tv/reiibei"
 				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
 			>
-				<HugeiconsIcon icon={TwitchFreeIcons} size="fit" strokeWidth={1.5} />
+				<HugeiconsIcon icon={TwitchIcon} size="fit" strokeWidth={1.5} />
 			</a>
 			<a
 				href="https://discord.com/invite/rQudKfzSZT"
 				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
 				target="_blank"
 			>
-				<HugeiconsIcon icon={DiscordFreeIcons} size="fit" strokeWidth={1.5} />
+				<HugeiconsIcon icon={DiscordIcon} size="fit" strokeWidth={1.5} />
 			</a>
 			<a
 				href="https://bsky.app/profile/reiing.art"
 				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
 				target="_blank"
 			>
-				<HugeiconsIcon icon={BlueskyFreeIcons} size="fit" strokeWidth={1.5} />
+				<HugeiconsIcon icon={BlueskyIcon} size="fit" strokeWidth={1.5} />
 			</a>
 			<a
 				href="https://instagram.com/reiingart"
 				class="flex size-10 items-center justify-center rounded-full border-2 border-dashed p-1.75 hover:scale-110 hover:text-pink"
 				target="_blank"
 			>
-				<HugeiconsIcon icon={InstagramFreeIcons} size="fit" strokeWidth={1.5} />
+				<HugeiconsIcon icon={InstagramIcon} size="fit" strokeWidth={1.5} />
 			</a>
 		</div>
 		<p class="mt-0.5 flex text-lg whitespace-nowrap text-pink">

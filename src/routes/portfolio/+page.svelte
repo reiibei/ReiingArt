@@ -1,3 +1,16 @@
+<script lang="ts">
+	import { HugeiconsIcon } from '@hugeicons/svelte';
+	import {
+		TwitchIcon,
+		YoutubeIcon,
+		DocumentAttachmentIcon,
+		GameController03Icon,
+		Cards01Icon
+	} from '@hugeicons/core-free-icons';
+
+	let { children } = $props();
+</script>
+
 <svelte:head>
 	<title>Portfolio</title>
 </svelte:head>
@@ -13,21 +26,53 @@
 			src="$lib/assets/aquarium-date.jpg?w=1280;640;400"
 			alt="aquarium date"
 		/>
-		<div class="flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 gap-2">
+		<div class="flex flex-col items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
 			<p class="text-2xl font-bold text-yellow">AQUARIUM DATE</p>
-			<p class="w-11/12 text-center">hi this is some text about the project</p>
-			<div class="flex flex-row items-center justify-center gap-2">
+			<div class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap">
+				<p>One of my largest pieces by far</p>
+				<p>15,000×2,500 of details and care</p>
+			</div>
+			<div class="flex flex-row items-center justify-center gap-1">
 				<a
 					href="https://www.twitch.tv/dufduf22"
 					target="_blank"
-					class="rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-					>@dufduf22</a
+					class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+					><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />dufduf22</a
 				>
 			</div>
 		</div>
 	</div>
 
-	<div class="flex w-full flex-row">
+	<div class="flex h-83 w-full flex-row gap-2">
+		<!-- poxmotes -->
+		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
+			<!-- width = 3 sizes -->
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-30"
+				src="$lib/assets/poxmotes.png?w=1280;640;400"
+				alt="poxmotes"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">Sleeping Poxial</p>
+				<div
+					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+				>
+					<p>Two angles, two styles!</p>
+					<p>Full-body, thumbnail-ready assets</p>
+				</div>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.youtube.com/@Poxial"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={YoutubeIcon} size="18" strokeWidth={1.5} />poxial</a
+					>
+				</div>
+			</div>
+		</div>
+
 		<!-- poxial zz -->
 		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
 			<!-- width = 3 sizes -->
@@ -36,46 +81,57 @@
 				src="$lib/assets/poxial-zz.png?w=1280;640;400"
 				alt="poxial zz"
 			/>
-			<div class="flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 gap-2">
-				<p class="text-2xl font-bold text-yellow">THUMBNAIL ASSET</p>
-				<p class="w-11/12 text-center">hi this is some text about the project</p>
-				<div class="flex flex-row items-center justify-center gap-2">
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">Sleeping Poxial</p>
+				<div
+					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+				>
+					<p>Two angles, two styles!</p>
+					<p>Full-body, thumbnail-ready assets</p>
+				</div>
+				<div class="flex flex-row items-center justify-center gap-1">
 					<a
 						href="https://www.youtube.com/@Poxial"
 						target="_blank"
-						class="rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						>@poxial</a
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={YoutubeIcon} size="18" strokeWidth={1.5} />poxial</a
 					>
 				</div>
 			</div>
 		</div>
+
 		<!-- DPCP V2 -->
 		<div class="group relative isolate flex w-1/2 items-center justify-center">
 			<!-- width = 3 sizes -->
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-30"
 				src="$lib/assets/dpcp-still.png?w=1280;640;400"
-				alt="poxial zz"
+				alt="DupCup"
 			/>
-			<div class="flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 gap-2">
-				<p class="text-2xl font-bold text-yellow">DupCup</p>
-				<p class="w-11/12 text-center">hi this is some text about the project</p>
-				<div class="flex flex-row ">
-					<div class="items-center justify-center gap-2">
-						<a
-							href="https://www.twitch.tv/dubstep298"
-							target="_blank"
-							class="rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-							>@dubstep298</a
-						>
-					</div>
-					<div class="items-center justify-center gap-2">
-						<a
-							href="/dpcp"
-							class="rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-							>full project</a
-						>
-					</div>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">Misdrop City</p>
+				<div
+					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+				>
+					<p>Cityscape of Misdrop City</p>
+					<p>Designed for Dubstep298's TETR.IO event, DupCup</p>
+				</div>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.twitch.tv/dubstep298"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />dubstep298</a
+					>
+					<a
+						href="/dpcp"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+					>
 				</div>
 			</div>
 		</div>

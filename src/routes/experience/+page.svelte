@@ -28,13 +28,7 @@
 	];
 
 	const complete = [
-		{
-			id: 'Poxial-2',
-			name: 'Poxial [YouTube]',
-			role: 'Thumbnail Asset Artist',
-			date: 'Dec 2025 - Jan 2026'
-		},
-		{
+				{
 			id: 'DPCP',
 			name: 'DupCup [TETR.IO]',
 			role: 'Event Aesthetic & Promotional Artist',
@@ -58,13 +52,6 @@
 			role: 'Gamemode & Merchandise Illustrator',
 			date: 'Apr 2024 - Oct 2024'
 		},
-
-		{
-			id: 'Poxial-1',
-			name: 'Poxial [YouTube]',
-			role: 'Emoticon & Badge Artist',
-			date: 'Jan 2023 - Oct 2024'
-		}
 	];
 </script>
 
