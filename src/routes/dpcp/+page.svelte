@@ -101,18 +101,18 @@
 				</div>
 			</div>
 
-			<!-- Single Comm -->
+			<!-- Solo Comm -->
 			<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
 				<!-- width = 3 sizes -->
 				<enhanced:img
 					class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 					src="$lib/assets/dpcp-single.png?w=1280;640;400"
-					alt="single comm"
+					alt="solo comm"
 				/>
 				<div
 					class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
 				>
-					<p class="text-2xl font-bold text-yellow">Single Commentator</p>
+					<p class="text-2xl font-bold text-yellow">Solo Commentator</p>
 				</div>
 			</div>
 
