@@ -103,7 +103,7 @@
 
 		<!-- DPCP V2 -->
 		<div
-			class="group relative isolate flex w-1/2 items-center justify-center rounded-lg border-2 border-dashed border-[#FFFAED85] "
+			class="group relative isolate flex aspect-video w-1/2 items-center justify-center rounded-lg"
 		>
 			<!-- width = 3 sizes -->
 			<enhanced:img

@@ -1,9 +1,20 @@
 <div class="mx-auto flex min-h-100 w-11/12 flex-col items-center gap-2">
 	<div
-		class="mt-2 mb-4 flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
+		class="flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
 	>
 		<p class="bold flex items-center text-2xl">
-			<span class="mx-2 text-yellow">DupCup v2 Graphics</span>
+			<span class="mx-2 text-yellow"> DupCup v2 Graphics </span>
+		</p>
+	</div>
+	<div class="mb-4 flex flex-col items-center justify-center text-center">
+		<p>
+			The second version of DupCup graphics is one that I had put in lots of love and care into. As
+			I still had very limited knowledge of cityscape I am very proud of the final product which
+			felt lively!
+		</p>
+		<p>
+			I also painstakenly done every individual windows.. I do wonder if there is an easier path for
+			the future me to learn (╭ರ_•́)
 		</p>
 	</div>
 
@@ -123,10 +134,20 @@
 	</div>
 
 	<div
-		class="mt-2 mb-4 flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
+		class="mt-8 flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
 	>
 		<p class="bold flex items-center text-2xl">
 			<span class="mx-2 text-yellow"> DupCup v1 Graphics </span>
+		</p>
+	</div>
+	<div class="mb-4 flex flex-col items-center justify-center text-center">
+		<p>
+			Due to a short timeframe and a wrist injury, the first DupCup graphics didn’t meet my personal
+			standards.
+		</p>
+		<p>
+			However, it was still a valuable learning experience, as I had never tackled cityscape
+			backgrounds before ٩(^ᗜ^ )و ´-
 		</p>
 	</div>
 
