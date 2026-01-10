@@ -1,3 +1,8 @@
+<script lang="ts">
+	import { HugeiconsIcon } from '@hugeicons/svelte';
+	import { TwitchIcon, BlueskyIcon } from '@hugeicons/core-free-icons';
+</script>
+
 <svelte:head>
 	<title>DupCup</title>
 </svelte:head>
@@ -25,11 +30,10 @@
 	<div class="flex w-full flex-col gap-2">
 		<div class="flex w-full flex-row gap-2">
 			<!-- v2 Promo Art -->
-			<div class="group relative isolate flex aspect-video w-1/2 items-center justify-center">
-				<!-- width = 3 sizes -->
+			<div class="group relative isolate flex w-1/2 items-center justify-center">
 				<enhanced:img
 					class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
-					src="$lib/assets/dpcp-still.png?w=1280;640;400"
+					src="$lib/assets/dpcp-art.png?w=1280;640;400"
 					alt="v2 promo art"
 				/>
 				<div
@@ -39,99 +43,124 @@
 					<div
 						class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
 					>
-						<p class="mb-2 italic">
-							A collaboration piece with <span class="text-pink">
-								<a href="https://vgen.co/amyhmlam" target="_blank" class="text-pink hover:underline"
-									>amyhmlam</a
-								></span
-							>
-						</p>
-						<p>
+						<p class="flex flex-row gap-1 italic mb-4">
+								A collaboration piece with <a
+									href="https://bsky.app/profile/amyhmlam.bsky.social"
+									target="_blank"
+									class="flex flex-row items-center gap-0.5 text-pink hover:underline"
+									><HugeiconsIcon icon={BlueskyIcon} size="15" strokeWidth={1.5} />@amyhmlam</a
+								>
+							</p>
+						<p class="flex flex-row gap-1">
 							<span class="text-pink">Organiser:</span>
-							<a href="https://twitch.tv/dubstep298" target="_blank" class="hover:underline"
-								>Dubstep298</a
-							>
-						</p>
-						<p><span class="text-pink">Featuring:</span> ???</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Still Image -->
-			<div class="group relative isolate flex aspect-video w-1/2 items-center justify-center">
-				<!-- width = 3 sizes -->
-				<enhanced:img
-					class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
-					src="$lib/assets/dpcp-still.png?w=1280;640;400"
-					alt="still image"
-				/>
-				<div
-					class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
-				>
-					<p class="text-2xl font-bold text-yellow">Stream Background</p>
-					<div
-						class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
-					>
-						<p>Cityscape of Misdrop City</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="flex w-full flex-row gap-2">
-			<!-- v2 Schedule -->
-			<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
-				<!-- width = 3 sizes -->
-				<enhanced:img
-					class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
-					src="$lib/assets/dpcp-schedule.png?w=1280;640;400"
-					alt="v2 schedule"
-				/>
-				<div
-					class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
-				>
-					<p class="text-2xl font-bold text-yellow">Schedule</p>
-					<div
-						class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
-					>
-						<p class="italic">
-							Trophy by <a
+							<a
 								href="https://twitch.tv/dubstep298"
 								target="_blank"
-								class="text-pink hover:underline">vitwoiv</a
+								class="flex flex-row items-center gap-0.5 hover:underline"
+								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />Dubstep298</a
 							>
 						</p>
+						<p class="flex flex-row gap-1">
+						<span class="text-pink">Featuring:</span>
+						<a
+							href="/dpcp"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+						>,
+						<a
+							href="/dpcp"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+						>,
+						<a
+							href="/dpcp"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+						>,
+						<a
+							href="/dpcp"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+						>,
+						<a
+							href="/dpcp"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+						>,
+						<a
+							href="/dpcp"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+						>
+					</p>
 					</div>
 				</div>
 			</div>
 
-			<!-- Solo Comm -->
-			<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
-				<!-- width = 3 sizes -->
-				<enhanced:img
-					class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
-					src="$lib/assets/dpcp-single.png?w=1280;640;400"
-					alt="solo comm"
-				/>
-				<div
-					class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
-				>
-					<p class="text-2xl font-bold text-yellow">Solo Commentator</p>
+			<div class="flex w-1/2 flex-col gap-2">
+				<!-- Still Image -->
+				<div class="group relative isolate flex aspect-video h-1/3 items-center justify-center">
+					<enhanced:img
+						class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+						src="$lib/assets/dpcp-still.png?w=1280;640;400"
+						alt="still image"
+					/>
+					<div
+						class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+					>
+						<p class="text-2xl font-bold text-yellow">Stream Background</p>
+						<div
+							class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+						>
+							<p>Cityscape of Misdrop City</p>
+						</div>
+					</div>
 				</div>
-			</div>
 
-			<!-- Duo Comm -->
-			<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
-				<!-- width = 3 sizes -->
-				<enhanced:img
-					class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
-					src="$lib/assets/dpcp-duo.png?w=1280;640;400"
-					alt="duo comm"
-				/>
-				<div
-					class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
-				>
-					<p class="text-2xl font-bold text-yellow">Duo Commentators</p>
+				<!-- v2 Schedule -->
+				<div class="group relative isolate flex aspect-video h-1/3 items-center justify-center">
+					<enhanced:img
+						class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+						src="$lib/assets/dpcp-schedule.png?w=1280;640;400"
+						alt="v2 schedule"
+					/>
+					<div
+						class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+					>
+						<p class="text-2xl font-bold text-yellow">Schedule</p>
+						<div
+							class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+						>
+							<p class="flex flex-row gap-1 italic">
+								Trophy by <a
+									href="https://bsky.app/profile/vitwoiv.bsky.social"
+									target="_blank"
+									class="flex flex-row items-center gap-0.5 text-pink hover:underline"
+									><HugeiconsIcon icon={BlueskyIcon} size="15" strokeWidth={1.5} />@vitwoiv</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Solo Comm -->
+				<div class="group relative isolate flex aspect-video h-1/3 items-center justify-center">
+					<enhanced:img
+						class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+						src="$lib/assets/dpcp-single.png?w=1280;640;400"
+						alt="solo comm"
+					/>
+					<div
+						class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+					>
+						<p class="text-2xl font-bold text-yellow">Solo Commentator</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -158,7 +187,6 @@
 	<div class="flex w-full flex-row gap-2">
 		<!-- v1 Promo Art -->
 		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
-			<!-- width = 3 sizes -->
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/dpcp1-art.png?w=1280;640;400"
@@ -171,26 +199,43 @@
 				<div
 					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
 				>
-					<p>
+					<p class="flex flex-row gap-1">
 						<span class="text-pink">Organiser:</span>
-						<a href="https://twitch.tv/dubstep298" target="_blank" class="hover:underline"
-							>Dubstep298</a
+						<a
+							href="https://twitch.tv/dubstep298"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />Dubstep298</a
 						>
 					</p>
-					<p>
+					<p class="flex flex-row gap-1">
 						<span class="text-pink">Sponsor:</span>
-						<a href="https://twitch.tv/ehrand0mguy" target="_blank" class="hover:underline"
-							>EhRandomGuy</a
+						<a
+							href="https://twitch.tv/ehrand0mguy"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />EhRandomGuy</a
 						>
 					</p>
-					<p>
+					<p class="flex flex-row gap-1">
 						<span class="text-pink">Featuring:</span>
-						<a href="https://twitch.tv/penbuvt" target="_blank" class="hover:underline">PenbuVT</a>,
-						<a href="https://twitch.tv/rikayamanovt" target="_blank" class="hover:underline"
-							>Rika Yamano</a
+						<a
+							href="https://twitch.tv/penbuvt"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />PenbuVT</a
 						>,
-						<a href="https://twitch.tv/perindigo" target="_blank" class="hover:underline"
-							>Peri Indigo</a
+						<a
+							href="https://twitch.tv/rikayamanovt"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />Rika Yamano</a
+						>,
+						<a
+							href="https://twitch.tv/perindigo"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 hover:underline"
+							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />Peri Indigo</a
 						>
 					</p>
 				</div>
@@ -199,7 +244,6 @@
 
 		<!-- v1 Schedule -->
 		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
-			<!-- width = 3 sizes -->
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/dpcp1-schedule.png?w=1280;640;400"
@@ -214,7 +258,6 @@
 
 		<!-- Stream Background -->
 		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
-			<!-- width = 3 sizes -->
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/dpcp1-screen.png?w=1280;640;400"

@@ -7,8 +7,6 @@
 		GameController03Icon,
 		Cards01Icon
 	} from '@hugeicons/core-free-icons';
-
-	let { children } = $props();
 </script>
 
 <svelte:head>
@@ -43,10 +41,9 @@
 		</div>
 	</div>
 
-	<div class="flex h-83 w-full flex-row gap-2">
+	<div class="flex w-full flex-row gap-2">
 		<!-- poxmotes -->
-		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
-			<!-- width = 3 sizes -->
+		<div class="group relative isolate flex aspect-square w-3/11 items-center justify-center">
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/poxmotes.png?w=1280;640;400"
@@ -73,8 +70,7 @@
 		</div>
 
 		<!-- poxial zz -->
-		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
-			<!-- width = 3 sizes -->
+		<div class="group relative isolate flex aspect-square w-3/11 items-center justify-center">
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/poxial-zz.png?w=1280;640;400"
@@ -105,7 +101,6 @@
 		<div
 			class="group relative isolate flex aspect-video w-1/2 items-center justify-center rounded-lg"
 		>
-			<!-- width = 3 sizes -->
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain p-1 group-hover:opacity-20"
 				src="$lib/assets/dpcp-still.png?w=1280;640;400"
@@ -129,6 +124,104 @@
 					>
 					<a
 						href="/dpcp"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex w-full flex-row gap-2">
+		<!-- SSL5 Split Squares -->
+		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl5-split.png?w=1280;640;400"
+				alt="ssl5 split squares"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">SSL5 Split Squares</p>
+				<div
+					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+				>
+					<p>gamemode illustration for TETR.IO event Super Streamer Lobby</p>
+				</div>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.twitch.tv/wyliecanttwitch"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />WylieCantTwitch</a
+					>
+					<a
+						href="/ssl"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- SSL5 Ghost and Ghoul -->
+		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl5-ghost.png?w=1280;640;400"
+				alt="ssl5 ghost and ghoul"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">SSL5 Ghost and Ghoul</p>
+				<div
+					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+				>
+					<p>gamemode illustration for TETR.IO event Super Streamer Lobby</p>
+				</div>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.twitch.tv/wyliecanttwitch"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />WylieCantTwitch</a
+					>
+					<a
+						href="/ssl"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- SSL4 Australian Mode -->
+		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl4-aussie.png?w=1280;640;400"
+				alt="ssl4 australian mode"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">SSL4 Australian Mode</p>
+				<div
+					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+				>
+					<p>gamemode illustration for TETR.IO event Super Streamer Lobby</p>
+				</div>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.twitch.tv/wyliecanttwitch"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />WylieCantTwitch</a
+					>
+					<a
+						href="/ssl"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
 						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
 					>
