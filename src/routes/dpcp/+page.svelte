@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { HugeiconsIcon } from '@hugeicons/svelte';
-	import { TwitchIcon, BlueskyIcon } from '@hugeicons/core-free-icons';
+	import { QuoteUpIcon, QuoteDownIcon, TwitchIcon, BlueskyIcon } from '@hugeicons/core-free-icons';
 </script>
 
 <svelte:head>
@@ -9,12 +9,28 @@
 
 <div class="mx-auto mb-8 flex min-h-100 w-11/12 flex-col items-center gap-2">
 	<div
-		class="flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
+		class="flex flex-row justify-center gap-5 rounded-3xl border-4 border-dashed border-pink bg-pinklucent p-4"
 	>
-		<p class="bold flex items-center text-2xl">
-			<span class="mx-2 text-yellow"> DupCup v2 Graphics </span>
+		<p class="flex justify-start">
+			<HugeiconsIcon icon={QuoteUpIcon} size="23" strokeWidth={2.5} />
+		</p>
+
+		<p class="w-11/12 text-center text-2xl">
+			The Dup Cup is a TETR.IO tournament series aimed at VTubers. Competitions follow a two-stage
+			format, going from Battle Royales to an elimination bracket. Its main focus is to give the
+			wider streaming community a small taste of competitive block-stackers, without the fear of top
+			players and streamsnipers demolishing them outright like in a typical open lobby.
+		</p>
+
+		<p class="flex items-end justify-end">
+			<HugeiconsIcon icon={QuoteDownIcon} size="23" strokeWidth={2.5} />
 		</p>
 	</div>
+
+	<p class="bold mt-8 flex items-center text-2xl">
+		<span class="mx-2 text-yellow"> DupCup v2 Graphics </span>
+	</p>
+
 	<div class="mb-4 flex flex-col items-center justify-center text-center">
 		<p>
 			The second version of DupCup graphics is one that I had put in lots of love and care into. As
@@ -43,14 +59,14 @@
 					<div
 						class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
 					>
-						<p class="flex flex-row gap-1 italic mb-4">
-								A collaboration piece with <a
-									href="https://bsky.app/profile/amyhmlam.bsky.social"
-									target="_blank"
-									class="flex flex-row items-center gap-0.5 text-pink hover:underline"
-									><HugeiconsIcon icon={BlueskyIcon} size="15" strokeWidth={1.5} />@amyhmlam</a
-								>
-							</p>
+						<p class="mb-4 flex flex-row gap-1 italic">
+							A collaboration piece with <a
+								href="https://bsky.app/profile/amyhmlam.bsky.social"
+								target="_blank"
+								class="flex flex-row items-center gap-0.5 text-pink hover:underline"
+								><HugeiconsIcon icon={BlueskyIcon} size="15" strokeWidth={1.5} />@amyhmlam</a
+							>
+						</p>
 						<p class="flex flex-row gap-1">
 							<span class="text-pink">Organiser:</span>
 							<a
@@ -61,44 +77,44 @@
 							>
 						</p>
 						<p class="flex flex-row gap-1">
-						<span class="text-pink">Featuring:</span>
-						<a
-							href="/dpcp"
-							target="_blank"
-							class="flex flex-row items-center gap-0.5 hover:underline"
-							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-						>,
-						<a
-							href="/dpcp"
-							target="_blank"
-							class="flex flex-row items-center gap-0.5 hover:underline"
-							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-						>,
-						<a
-							href="/dpcp"
-							target="_blank"
-							class="flex flex-row items-center gap-0.5 hover:underline"
-							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-						>,
-						<a
-							href="/dpcp"
-							target="_blank"
-							class="flex flex-row items-center gap-0.5 hover:underline"
-							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-						>,
-						<a
-							href="/dpcp"
-							target="_blank"
-							class="flex flex-row items-center gap-0.5 hover:underline"
-							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-						>,
-						<a
-							href="/dpcp"
-							target="_blank"
-							class="flex flex-row items-center gap-0.5 hover:underline"
-							><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-						>
-					</p>
+							<span class="text-pink">Featuring:</span>
+							<a
+								href="/dpcp"
+								target="_blank"
+								class="flex flex-row items-center gap-0.5 hover:underline"
+								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+							>,
+							<a
+								href="/dpcp"
+								target="_blank"
+								class="flex flex-row items-center gap-0.5 hover:underline"
+								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+							>,
+							<a
+								href="/dpcp"
+								target="_blank"
+								class="flex flex-row items-center gap-0.5 hover:underline"
+								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+							>,
+							<a
+								href="/dpcp"
+								target="_blank"
+								class="flex flex-row items-center gap-0.5 hover:underline"
+								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+							>,
+							<a
+								href="/dpcp"
+								target="_blank"
+								class="flex flex-row items-center gap-0.5 hover:underline"
+								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+							>,
+							<a
+								href="/dpcp"
+								target="_blank"
+								class="flex flex-row items-center gap-0.5 hover:underline"
+								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+							>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -166,13 +182,9 @@
 		</div>
 	</div>
 
-	<div
-		class="mt-8 flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
-	>
-		<p class="bold flex items-center text-2xl">
-			<span class="mx-2 text-yellow"> DupCup v1 Graphics </span>
-		</p>
-	</div>
+	<p class="bold mt-8 flex items-center text-2xl">
+		<span class="mx-2 text-yellow"> DupCup v1 Graphics </span>
+	</p>
 	<div class="mb-4 flex flex-col items-center justify-center text-center">
 		<p>
 			Due to a short timeframe and a wrist injury, the first DupCup graphics didn’t meet my personal
