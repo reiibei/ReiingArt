@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>DupCup</title>
+</svelte:head>
+
 <div class="mx-auto mb-8 flex min-h-100 w-11/12 flex-col items-center gap-2">
 	<div
 		class="flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
