@@ -7,7 +7,7 @@
 	<title>Reii Ng</title>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center p-1 text-center">
+<div class="mb-8 flex flex-col items-center justify-center p-1 text-center">
 	<div class="flex min-h-85 w-full items-start justify-center">
 		<p class="mx-auto w-11/12 text-translucent italic">
 			. . . website currently in construction . . .

@@ -5,24 +5,24 @@
 	const current = [
 		{
 			id: 'WBB',
-			name: "Wylie's Blitz Battle",
-			role: '2D Game Artist & Animator',
+			role: "Wylie's Blitz Battle",
+			name: '2D Game Artist & Animator',
 			date: 'Jan 2026 - Present',
 			link: '',
 			target: ''
 		},
 		{
 			id: 'ToyboxTumble',
-			name: 'Toybox Tumble',
-			role: 'Creative & Design Director',
+			role: 'Toybox Tumble',
+			name: 'Creative & Design Director',
 			date: 'May 2025 - Present',
 			link: '',
 			target: ''
 		},
 		{
 			id: 'Freelance',
-			name: 'Freelance Multidisciplinary Artist',
-			role: 'Illustrator, Animator & Visual Designer',
+			role: 'Freelance Multidisciplinary Artist',
+			name: 'Illustrator, Animator, Visual Designer',
 			date: 'May 2023 - Present',
 			link: '',
 			target: ''
@@ -32,32 +32,32 @@
 	const complete = [
 		{
 			id: 'DPCP',
-			name: 'DupCup [TETR.IO]',
-			role: 'Event Aesthetic & Promotional Artist',
+			role: 'DupCup [TETR.IO]',
+			name: 'Event Aesthetic & Promotional Artist',
 			date: 'Feb 2025 - Jan 2026',
 			link: '/dpcp',
 			target: ''
 		},
 		{
 			id: 'Intern1',
-			name: 'Lucky Mall MY',
-			role: 'Graphic Design Intern',
+			role: 'Lucky Mall MY',
+			name: 'Graphic Design Intern',
 			date: 'Sept 2025 - Dec 2025',
 			link: '',
 			target: ''
 		},
 		{
 			id: 'Diploma',
-			name: 'Asia Pacific University of Innovation and Technology',
-			role: 'Diploma in Media and Design (Animation)',
+			role: 'Asia Pacific University of Innovation and Technology',
+			name: 'Diploma in Media and Design (Animation)',
 			date: 'Aug 2023 - Aug 2025',
 			link: '',
 			target: ''
 		},
 		{
 			id: 'SSL',
-			name: 'Super Streamer Lobby [TETR.IO]',
-			role: 'Gamemode & Merchandise Illustrator',
+			role: 'Super Streamer Lobby [TETR.IO]',
+			name: 'Gamemode & Merchandise Illustrator',
 			date: 'Apr 2024 - Oct 2024',
 			link: '/ssl',
 			target: ''
@@ -69,7 +69,7 @@
 	<title>Experience</title>
 </svelte:head>
 
-<div class="flex min-h-100 w-full items-start justify-center mb-8">
+<div class="mb-8 flex min-h-100 w-full items-start justify-center">
 	<div class="flex w-11/12 flex-col">
 		<div class="mb-2 flex flex-row items-center justify-center text-translucent">
 			<HugeiconsIcon icon={TimeQuarterPassIcon} size="20" strokeWidth={1} />
@@ -79,7 +79,7 @@
 		{#each current as cur}
 			<div id={cur.id} class="mb-3 flex flex-col">
 				<div class="flex flex-row items-center">
-					<a href={cur.link} target={cur.target} class="w-full">
+					<a href={cur.link} target={cur.target} class="w-full cursor-default">
 						<p class="flex flex-col text-left whitespace-nowrap">
 							<span class="text-2xl font-bold">{cur.name}</span>
 							<span class="text-yellow">{cur.role}</span>
@@ -106,7 +106,7 @@
 		{#each complete as com}
 			<div id={com.id} class="mb-3 flex flex-col">
 				<div class="flex flex-row items-center">
-					<a href={com.link} target={com.target} class="w-full">
+					<a href={com.link} target={com.target} class="w-full cursor-default">
 						<p class="flex flex-col text-left whitespace-nowrap">
 							<span class="text-2xl font-bold">{com.name}</span>
 							<span class="text-yellow">{com.role}</span>
