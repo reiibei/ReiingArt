@@ -4,6 +4,7 @@
 		QuoteUpIcon,
 		QuoteDownIcon,
 		TwitchIcon,
+		BlueskyIcon,
 		SoftDrink02Icon,
 		LoyaltyCardIcon
 	} from '@hugeicons/core-free-icons';
@@ -65,6 +66,34 @@
 			</div>
 		</div>
 
+		<!-- SSL4 Welcome Banner -->
+		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl4-welcome.jpg?w=1280;640;400"
+				alt="ssl4 welcome"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">SSL4 Welcome Graphic</p>
+				<div
+					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
+				>
+					<p class="mb-4 flex flex-row gap-1 italic">
+						A collaboration piece with <a
+							href="https://bsky.app/profile/amyhmlam.bsky.social"
+							target="_blank"
+							class="flex flex-row items-center gap-0.5 text-pink hover:underline"
+							><HugeiconsIcon icon={BlueskyIcon} size="15" strokeWidth={1.5} />@amyhmlam</a
+						>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex w-full flex-row gap-2">
 		<!-- SSL4 Australian Mode -->
 		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
 			<enhanced:img
