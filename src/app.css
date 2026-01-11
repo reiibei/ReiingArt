@@ -33,14 +33,14 @@
 	--color-pink: #ffaab4;
 	--color-pinklucent: #ffaab470;
 
+	--color-yellow: #ffd471;
+	--color-yellucent: #ffd47170;
+
 	--color-purple: #9371dc;
 	--color-purplucent: #9371dc75;
 
 	--color-blue: #8db2ef;
 	--color-blucent: #8db2ef75;
-
-	--color-yellow: #ffd471;
-	--color-yellucent: #ffd47170;
 }
 
 html {

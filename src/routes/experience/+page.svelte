@@ -93,7 +93,7 @@
 										strokeWidth={2}
 									/></span
 								>
-								<span class="text-yellow">{cur.role}</span>
+								<span class="text-pink">{cur.role}</span>
 							</p>
 
 							<hr class="items-center border-dotted border-translucent" />
@@ -109,7 +109,7 @@
 						<div class="w-full">
 							<p class="flex flex-col text-left whitespace-nowrap">
 								<span class="text-2xl font-bold">{cur.name}</span>
-								<span class="text-yellow">{cur.role}</span>
+								<span class="text-pink">{cur.role}</span>
 							</p>
 
 							<hr class="items-center border-dotted border-translucent" />
