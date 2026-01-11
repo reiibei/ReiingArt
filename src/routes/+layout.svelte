@@ -12,9 +12,9 @@
 	import {
 		StarIcon,
 		QuillWrite01Icon,
-		NoteIcon,
+		StickyNote02Icon,
 		BlushBrush02Icon,
-		DocumentAttachmentIcon,
+		FolderFavouriteIcon,
 		MoneySavingJarIcon,
 		TwitchIcon,
 		DiscordIcon,
@@ -69,7 +69,7 @@
 				page.route.id == '/experience' ? 'border-pinklucent text-pale' : 'border-translucent '
 			])}
 			><span class="text-yellow group-hover:text-pink"
-				><HugeiconsIcon icon={NoteIcon} size="15" strokeWidth={1.5} /></span
+				><HugeiconsIcon icon={StickyNote02Icon} size="15" strokeWidth={1.5} /></span
 			>Experience</a
 		>
 		<a
@@ -89,7 +89,7 @@
 				page.route.id == '/project' ? 'border-pinklucent text-pale' : 'border-translucent '
 			])}
 			><span class="text-yellow group-hover:text-pink"
-				><HugeiconsIcon icon={DocumentAttachmentIcon} size="15" strokeWidth={1.5} /></span
+				><HugeiconsIcon icon={FolderFavouriteIcon} size="15" strokeWidth={1.5} /></span
 			> Project</a
 		>
 		<a

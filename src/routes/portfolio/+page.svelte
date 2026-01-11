@@ -3,7 +3,7 @@
 	import {
 		TwitchIcon,
 		YoutubeIcon,
-		DocumentAttachmentIcon,
+		FolderFavouriteIcon,
 		GameController03Icon,
 		Cards01Icon
 	} from '@hugeicons/core-free-icons';
@@ -125,7 +125,7 @@
 					<a
 						href="/dpcp"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
 					>
 				</div>
 			</div>
@@ -159,7 +159,7 @@
 					<a
 						href="/ssl"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
 					>
 				</div>
 			</div>
@@ -191,7 +191,7 @@
 					<a
 						href="/ssl"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
 					>
 				</div>
 			</div>
@@ -223,7 +223,7 @@
 					<a
 						href="/ssl"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={DocumentAttachmentIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
 					>
 				</div>
 			</div>
