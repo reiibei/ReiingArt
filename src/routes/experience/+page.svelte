@@ -4,7 +4,7 @@
 		StarsIcon,
 		TimeQuarterPassIcon,
 		Time04Icon,
-		FolderFavouriteIcon
+		ArrowUpRight02Icon
 	} from '@hugeicons/core-free-icons';
 
 	const current = [
@@ -83,14 +83,15 @@
 			<div id={cur.id} class="mb-3 flex flex-col">
 				<div class="flex flex-row items-center">
 					{#if cur.link}
-						<a href={cur.link} target={cur.target} class="w-full">
+						<a href={cur.link} target={cur.target} class="group w-full">
 							<p class="flex flex-col text-left whitespace-nowrap">
-								<span class="flex flex-row items-center gap-2 text-2xl font-bold"
-									><HugeiconsIcon
-										icon={FolderFavouriteIcon}
+								<span
+									class="flex flex-row items-center gap-2 text-2xl font-bold group-hover:underline"
+									>{cur.name}<HugeiconsIcon
+										icon={ArrowUpRight02Icon}
 										size="20"
 										strokeWidth={2}
-									/>{cur.name}</span
+									/></span
 								>
 								<span class="text-yellow">{cur.role}</span>
 							</p>
@@ -134,14 +135,15 @@
 			<div id={com.id} class="mb-3 flex flex-col">
 				<div class="flex flex-row items-center">
 					{#if com.link}
-						<a href={com.link} target={com.target} class="w-full">
+						<a href={com.link} target={com.target} class="group w-full">
 							<p class="flex flex-col text-left whitespace-nowrap">
-								<span class="flex flex-row items-center gap-2 text-2xl font-bold"
-									><HugeiconsIcon
-										icon={FolderFavouriteIcon}
+								<span
+									class="flex flex-row items-center gap-2 text-2xl font-bold group-hover:underline"
+									>{com.name}<HugeiconsIcon
+										icon={ArrowUpRight02Icon}
 										size="20"
 										strokeWidth={2}
-									/>{com.name}</span
+									/></span
 								>
 								<span class="text-yellow">{com.role}</span>
 							</p>

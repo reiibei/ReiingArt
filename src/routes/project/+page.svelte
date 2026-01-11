@@ -2,7 +2,7 @@
 	<title>Reii | Project</title>
 </svelte:head>
 
-<div class="mx-auto mb-8 flex w-11/12 min-h-100 flex-col items-center gap-6">
+<div class="mx-auto mb-8 flex min-h-100 w-11/12 flex-col items-center gap-6">
 	<div class="flex w-full flex-row gap-6">
 		<div class="group relative isolate flex aspect-3/1 w-1/2 hover:scale-105">
 			<a href="/dpcp" class="flex w-full items-end justify-center">
@@ -15,7 +15,7 @@
 					class="flex w-6/7 flex-row items-center justify-center gap-2 rounded-3xl bg-[#19161fbc] p-5"
 				>
 					<enhanced:img
-						class="aspect-square size-28 rounded-full"
+						class="aspect-square size-28"
 						src="$lib/assets/dpcp-logo.png?w=1280;640;400"
 						alt="dupcup logo"
 					/>
@@ -38,7 +38,7 @@
 					class="flex w-6/7 flex-row items-center justify-center gap-2 rounded-3xl bg-[#19161fbc] p-5"
 				>
 					<enhanced:img
-						class="aspect-square size-28 rounded-full"
+						class="aspect-square size-28"
 						src="$lib/assets/ssl-logo.png?w=1280;640;400"
 						alt="ssl logo"
 					/>
