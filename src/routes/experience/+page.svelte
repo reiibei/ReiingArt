@@ -9,7 +9,8 @@
 			name: '2D Game Artist & Animator',
 			date: 'Jan 2026 - Present',
 			link: '',
-			target: ''
+			target: '',
+			cursor: 'default'
 		},
 		{
 			id: 'ToyboxTumble',
@@ -17,7 +18,8 @@
 			name: 'Creative & Design Director',
 			date: 'May 2025 - Present',
 			link: '',
-			target: ''
+			target: '',
+			cursor: 'pointer'
 		},
 		{
 			id: 'Freelance',
@@ -43,16 +45,12 @@
 			role: 'Lucky Mall MY',
 			name: 'Graphic Design Intern',
 			date: 'Sept 2025 - Dec 2025',
-			link: '',
-			target: ''
 		},
 		{
 			id: 'Diploma',
 			role: 'Asia Pacific University of Innovation and Technology',
 			name: 'Diploma in Media and Design (Animation)',
 			date: 'Aug 2023 - Aug 2025',
-			link: '',
-			target: ''
 		},
 		{
 			id: 'SSL',
@@ -79,21 +77,39 @@
 		{#each current as cur}
 			<div id={cur.id} class="mb-3 flex flex-col">
 				<div class="flex flex-row items-center">
-					<a href={cur.link} target={cur.target} class="w-full cursor-default">
-						<p class="flex flex-col text-left whitespace-nowrap">
-							<span class="text-2xl font-bold">{cur.name}</span>
-							<span class="text-yellow">{cur.role}</span>
-						</p>
+					{#if cur.link}
+						<a href={cur.link} target={cur.target} class="w-full">
+							<p class="flex flex-col text-left whitespace-nowrap">
+								<span class="text-2xl font-bold">{cur.name}</span>
+								<span class="text-yellow">{cur.role}</span>
+							</p>
 
-						<hr class="items-center border-dotted border-translucent" />
+							<hr class="items-center border-dotted border-translucent" />
 
-						<p
-							class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
-						>
-							<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
-							{cur.date}
-						</p>
-					</a>
+							<p
+								class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
+							>
+								<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
+								{cur.date}
+							</p>
+						</a>
+					{:else}
+						<div class="w-full">
+							<p class="flex flex-col text-left whitespace-nowrap">
+								<span class="text-2xl font-bold">{cur.name}</span>
+								<span class="text-yellow">{cur.role}</span>
+							</p>
+
+							<hr class="items-center border-dotted border-translucent" />
+
+							<p
+								class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
+							>
+								<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
+								{cur.date}
+							</p>
+						</div>
+					{/if}
 				</div>
 			</div>
 		{/each}
@@ -106,21 +122,39 @@
 		{#each complete as com}
 			<div id={com.id} class="mb-3 flex flex-col">
 				<div class="flex flex-row items-center">
-					<a href={com.link} target={com.target} class="w-full cursor-default">
-						<p class="flex flex-col text-left whitespace-nowrap">
-							<span class="text-2xl font-bold">{com.name}</span>
-							<span class="text-yellow">{com.role}</span>
-						</p>
+					{#if com.link}
+						<a href={com.link} target={com.target} class="w-full">
+							<p class="flex flex-col text-left whitespace-nowrap">
+								<span class="text-2xl font-bold">{com.name}</span>
+								<span class="text-yellow">{com.role}</span>
+							</p>
 
-						<hr class="items-center border-dotted border-translucent" />
+							<hr class="items-center border-dotted border-translucent" />
 
-						<p
-							class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
-						>
-							<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
-							{com.date}
-						</p>
-					</a>
+							<p
+								class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
+							>
+								<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
+								{com.date}
+							</p>
+						</a>
+					{:else}
+						<div class="w-full">
+							<p class="flex flex-col text-left whitespace-nowrap">
+								<span class="text-2xl font-bold">{com.name}</span>
+								<span class="text-yellow">{com.role}</span>
+							</p>
+
+							<hr class="items-center border-dotted border-translucent" />
+
+							<p
+								class="flex flex-row items-center justify-end gap-1 text-right whitespace-nowrap text-translucent italic"
+							>
+								<HugeiconsIcon icon={StarsIcon} size="15" strokeWidth={1} />
+								{com.date}
+							</p>
+						</div>
+					{/if}
 				</div>
 			</div>
 		{/each}
