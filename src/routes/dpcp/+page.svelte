@@ -76,45 +76,53 @@
 								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />Dubstep298</a
 							>
 						</p>
-						<p class="flex flex-row gap-1">
-							<span class="text-pink">Featuring:</span>
-							<a
-								href="/dpcp"
-								target="_blank"
-								class="flex flex-row items-center gap-0.5 hover:underline"
-								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-							>,
-							<a
-								href="/dpcp"
-								target="_blank"
-								class="flex flex-row items-center gap-0.5 hover:underline"
-								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-							>,
-							<a
-								href="/dpcp"
-								target="_blank"
-								class="flex flex-row items-center gap-0.5 hover:underline"
-								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-							>,
-							<a
-								href="/dpcp"
-								target="_blank"
-								class="flex flex-row items-center gap-0.5 hover:underline"
-								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-							>,
-							<a
-								href="/dpcp"
-								target="_blank"
-								class="flex flex-row items-center gap-0.5 hover:underline"
-								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-							>,
-							<a
-								href="/dpcp"
-								target="_blank"
-								class="flex flex-row items-center gap-0.5 hover:underline"
-								><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
-							>
-						</p>
+						<div class="flex flex-row gap-1">
+							<p>
+								<span class="text-pink">Featuring:</span>
+							</p>
+							<div class="flex flex-col gap-1">
+								<p class="flex flex-row gap-1">
+									<a
+										href="/dpcp"
+										target="_blank"
+										class="flex flex-row items-center gap-0.5 hover:underline"
+										><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+									>,
+									<a
+										href="/dpcp"
+										target="_blank"
+										class="flex flex-row items-center gap-0.5 hover:underline"
+										><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+									>,
+									<a
+										href="/dpcp"
+										target="_blank"
+										class="flex flex-row items-center gap-0.5 hover:underline"
+										><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+									>,
+								</p>
+								<p class="flex flex-row gap-1">
+									<a
+										href="/dpcp"
+										target="_blank"
+										class="flex flex-row items-center gap-0.5 hover:underline"
+										><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+									>,
+									<a
+										href="/dpcp"
+										target="_blank"
+										class="flex flex-row items-center gap-0.5 hover:underline"
+										><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+									>,
+									<a
+										href="/dpcp"
+										target="_blank"
+										class="flex flex-row items-center gap-0.5 hover:underline"
+										><HugeiconsIcon icon={TwitchIcon} size="15" strokeWidth={1.5} />name</a
+									>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
