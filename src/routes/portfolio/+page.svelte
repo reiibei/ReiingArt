@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>Portfolio</title>
+	<title>Reii | Portfolio</title>
 </svelte:head>
 
 <!--  mx-auto min-h-100 w-11/12 items-center -->

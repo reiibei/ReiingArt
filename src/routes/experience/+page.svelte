@@ -64,7 +64,7 @@
 </script>
 
 <svelte:head>
-	<title>Experience</title>
+	<title>Reii | Experience</title>
 </svelte:head>
 
 <div class="mb-8 flex min-h-100 w-full items-start justify-center">

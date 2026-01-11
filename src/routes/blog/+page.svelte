@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Reii | Blog</title>
 </svelte:head>
 
 <div class="mx-auto min-h-100 w-11/12">
