@@ -1,6 +1,12 @@
 <script lang="ts">
 	import { HugeiconsIcon } from '@hugeicons/svelte';
-	import { TwitchIcon, QuoteUpIcon, QuoteDownIcon } from '@hugeicons/core-free-icons';
+	import {
+		QuoteUpIcon,
+		QuoteDownIcon,
+		TwitchIcon,
+		SoftDrink02Icon,
+		LoyaltyCardIcon
+	} from '@hugeicons/core-free-icons';
 </script>
 
 <svelte:head>
@@ -77,8 +83,148 @@
 	<p class="bold mt-8 flex items-center text-2xl">
 		<span class="mx-2 text-yellow">Contestant Prizes</span>
 	</p>
+	<div class="flex w-full flex-row gap-2">
+		<!-- SSL4 Levhanni -->
+		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl4-levhanni.png?w=1280;640;400"
+				alt="levhanni"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">SSL4</p>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.twitch.tv/levhanni"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />levhanni</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- SSL4 Circle -->
+		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl4-circle.png?w=1280;640;400"
+				alt="circle"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">SSL4</p>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.twitch.tv/mylifeisacircle"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />MyLifeIsACircle</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- SSL3 Milan -->
+		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl3-milan.png?w=1280;640;400"
+				alt="milan"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">SSL3</p>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://www.twitch.tv/milan9135"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />milan9135</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<p class="bold mt-8 flex items-center text-2xl">
 		<span class="mx-2 text-yellow">Event Merchandise</span>
 	</p>
+	<div class="flex w-full flex-row gap-2">
+		<!-- Beginner Mode -->
+		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl-beginner.png?w=1280;640;400"
+				alt="beginner"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">Gamemode: Beginner</p>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/beginner-mode-big-boy-mug"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={SoftDrink02Icon} size="18" strokeWidth={1.5} />mug</a
+					>
+					<a
+						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/sticker-sheet"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />stickers</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- I Madnness -->
+		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl-i_madness.png?w=1280;640;400"
+				alt="i madness"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">Gamemode: I Madness</p>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/sticker-sheet"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />stickers</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- Jumpsquare -->
+		<div class="group relative isolate flex aspect-square w-1/4 items-center justify-center">
+			<enhanced:img
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
+				src="$lib/assets/ssl-jumpsquare.png?w=1280;640;400"
+				alt="jumpsquare"
+			/>
+			<div
+				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
+			>
+				<p class="text-2xl font-bold text-yellow">Gamemode: Jumpsquare</p>
+				<div class="flex flex-row items-center justify-center gap-1">
+					<a
+						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/sticker-sheet"
+						target="_blank"
+						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
+						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />stickers</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
