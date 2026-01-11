@@ -14,6 +14,7 @@
 		QuillWrite01Icon,
 		NoteIcon,
 		BlushBrush02Icon,
+		DocumentAttachmentIcon,
 		MoneySavingJarIcon,
 		TwitchIcon,
 		DiscordIcon,
@@ -80,6 +81,16 @@
 			><span class="text-yellow group-hover:text-pink"
 				><HugeiconsIcon icon={BlushBrush02Icon} size="15" strokeWidth={1.5} /></span
 			> Portfolio</a
+		>
+		<a
+			href="/project"
+			class={clsx([
+				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
+				page.route.id == '/project' ? 'border-pinklucent text-pale' : 'border-translucent '
+			])}
+			><span class="text-yellow group-hover:text-pink"
+				><HugeiconsIcon icon={DocumentAttachmentIcon} size="15" strokeWidth={1.5} /></span
+			> Project</a
 		>
 		<a
 			href="/pricing"
