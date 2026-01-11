@@ -52,7 +52,7 @@
 				><HugeiconsIcon icon={StarIcon} size="15" strokeWidth={1.5} /></span
 			> About</a
 		>
-		<a
+		<!-- <a
 			href="/blog"
 			class={clsx([
 				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
@@ -61,7 +61,7 @@
 			><span class="text-yellow group-hover:text-pink"
 				><HugeiconsIcon icon={QuillWrite01Icon} size="15" strokeWidth={1.5} /></span
 			> Blog</a
-		>
+		> -->
 		<a
 			href="/experience"
 			class={clsx([
