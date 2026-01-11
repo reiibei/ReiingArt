@@ -13,9 +13,7 @@
 	<title>Reii | Portfolio</title>
 </svelte:head>
 
-<!--  mx-auto min-h-100 w-11/12 items-center -->
-
-<div class="mx-auto mb-8 flex min-h-100 w-11/12 flex-col items-center gap-2">
+<div class="mx-auto mb-8 flex w-11/12 flex-col items-center gap-2">
 	<!-- aquarium date -->
 	<div class="group relative isolate flex aspect-6/1 w-full items-center justify-center">
 		<!-- width = 3 sizes -->

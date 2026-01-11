@@ -72,7 +72,7 @@
 	<title>Reii | Experience</title>
 </svelte:head>
 
-<div class="mb-8 flex min-h-100 w-full items-start justify-center">
+<div class="mb-8 flex w-full items-start justify-center">
 	<div class="flex w-11/12 flex-col">
 		<div class="mb-2 flex flex-row items-center justify-center text-translucent">
 			<HugeiconsIcon icon={TimeQuarterPassIcon} size="20" strokeWidth={1} />

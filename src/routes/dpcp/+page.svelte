@@ -7,7 +7,7 @@
 	<title>DupCup</title>
 </svelte:head>
 
-<div class="mx-auto mb-8 flex min-h-100 w-11/12 flex-col items-center gap-2">
+<div class="mx-auto mb-8 flex w-11/12 flex-col items-center gap-2">
 	<div
 		class="flex flex-row justify-center gap-5 rounded-3xl border-4 border-dashed border-pink bg-pinklucent p-4"
 	>
