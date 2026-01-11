@@ -123,7 +123,7 @@
 					<a
 						href="/dpcp"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />Full Project</a
 					>
 				</div>
 			</div>
@@ -157,7 +157,7 @@
 					<a
 						href="/ssl"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />Full Project</a
 					>
 				</div>
 			</div>
@@ -189,7 +189,7 @@
 					<a
 						href="/ssl"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />Full Project</a
 					>
 				</div>
 			</div>
@@ -221,7 +221,7 @@
 					<a
 						href="/ssl"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />full project</a
+						><HugeiconsIcon icon={FolderFavouriteIcon} size="18" strokeWidth={1.5} />Full Project</a
 					>
 				</div>
 			</div>

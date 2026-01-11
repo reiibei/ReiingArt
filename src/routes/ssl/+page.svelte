@@ -100,7 +100,7 @@
 						href="https://www.twitch.tv/levhanni"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />levhanni</a
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />Levhanni</a
 					>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 						href="https://www.twitch.tv/milan9135"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />milan9135</a
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />Milan9135</a
 					>
 				</div>
 			</div>
@@ -171,13 +171,13 @@
 						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/beginner-mode-big-boy-mug"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={SoftDrink02Icon} size="18" strokeWidth={1.5} />mug</a
+						><HugeiconsIcon icon={SoftDrink02Icon} size="18" strokeWidth={1.5} />Mug</a
 					>
 					<a
 						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/sticker-sheet"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />stickers</a
+						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />Stickers</a
 					>
 				</div>
 			</div>
@@ -199,7 +199,7 @@
 						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/sticker-sheet"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />stickers</a
+						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />Stickers</a
 					>
 				</div>
 			</div>
@@ -221,7 +221,7 @@
 						href="https://superstreamerlobby-shop.fourthwall.com/en-usd/products/sticker-sheet"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />stickers</a
+						><HugeiconsIcon icon={LoyaltyCardIcon} size="18" strokeWidth={1.5} />Stickers</a
 					>
 				</div>
 			</div>
