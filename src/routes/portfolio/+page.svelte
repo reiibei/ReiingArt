@@ -61,7 +61,7 @@
 						href="https://www.youtube.com/@Poxial"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={YoutubeIcon} size="18" strokeWidth={1.5} />poxial</a
+						><HugeiconsIcon icon={YoutubeIcon} size="18" strokeWidth={1.5} />Poxial</a
 					>
 				</div>
 			</div>
@@ -89,7 +89,7 @@
 						href="https://www.youtube.com/@Poxial"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={YoutubeIcon} size="18" strokeWidth={1.5} />poxial</a
+						><HugeiconsIcon icon={YoutubeIcon} size="18" strokeWidth={1.5} />Poxial</a
 					>
 				</div>
 			</div>
@@ -118,7 +118,7 @@
 						href="https://www.twitch.tv/dubstep298"
 						target="_blank"
 						class="flex flex-row items-center justify-center gap-1 rounded-full border-2 border-translucent px-2 hover:border-pinklucent hover:text-pink"
-						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />dubstep298</a
+						><HugeiconsIcon icon={TwitchIcon} size="18" strokeWidth={1.5} />Dubstep298</a
 					>
 					<a
 						href="/dpcp"
