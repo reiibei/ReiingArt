@@ -27,8 +27,8 @@
 		</p>
 	</div>
 
-	<p class="bold mt-8 flex items-center text-2xl">
-		<span class="mx-2 text-yellow"> DupCup v2 Graphics </span>
+	<p class="bold mt-8 flex items-center text-3xl">
+		<span class="mx-2 text-pink"> DupCup v2 Graphics </span>
 	</p>
 
 	<div class="mb-4 flex flex-col items-center justify-center text-center">
@@ -190,8 +190,8 @@
 		</div>
 	</div>
 
-	<p class="bold mt-8 flex items-center text-2xl">
-		<span class="mx-2 text-yellow"> DupCup v1 Graphics </span>
+	<p class="bold mt-8 flex items-center text-3xl">
+		<span class="mx-2 text-pink"> DupCup v1 Graphics </span>
 	</p>
 	<div class="mb-4 flex flex-col items-center justify-center text-center">
 		<p>

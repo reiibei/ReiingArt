@@ -33,8 +33,8 @@
 		</p>
 	</div>
 
-	<p class="bold mt-8 flex items-center text-2xl">
-		<span class="mx-2 text-yellow"> Gamemode Illustration </span>
+	<p class="bold mt-8 flex items-center text-3xl">
+		<span class="mx-2 text-pink"> Gamemode Illustration </span>
 	</p>
 
 	<div class="flex w-full flex-row gap-2">
@@ -109,8 +109,8 @@
 		</div>
 	</div>
 
-	<p class="bold mt-8 flex items-center text-2xl">
-		<span class="mx-2 text-yellow">Contestant Prizes</span>
+	<p class="bold mt-8 flex items-center text-3xl">
+		<span class="mx-2 text-pink">Contestant Prizes</span>
 	</p>
 	<div class="flex w-full flex-row gap-2">
 		<!-- SSL4 Levhanni -->
@@ -180,8 +180,8 @@
 		</div>
 	</div>
 
-	<p class="bold mt-8 flex items-center text-2xl">
-		<span class="mx-2 text-yellow">Event Merchandise</span>
+	<p class="bold mt-8 flex items-center text-3xl">
+		<span class="mx-2 text-pink">Event Merchandise</span>
 	</p>
 	<div class="flex w-full flex-row gap-2">
 		<!-- Beginner Mode -->
