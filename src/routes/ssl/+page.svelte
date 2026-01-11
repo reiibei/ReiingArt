@@ -1,20 +1,35 @@
 <script lang="ts">
 	import { HugeiconsIcon } from '@hugeicons/svelte';
-	import { TwitchIcon } from '@hugeicons/core-free-icons';
+	import { TwitchIcon, QuoteUpIcon, QuoteDownIcon } from '@hugeicons/core-free-icons';
 </script>
 
 <svelte:head>
 	<title>Super Streamer Lobby</title>
 </svelte:head>
 
-<div class="mx-auto mb-8 flex min-h-100 w-11/12 flex-col items-center gap-2">
+<div class="mx-auto mb-8 flex w-11/12 flex-col items-center gap-2">
 	<div
-		class="flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
+		class="flex flex-row justify-center gap-5 rounded-3xl border-4 border-dashed border-pink bg-pinklucent p-4"
 	>
-		<p class="bold flex items-center text-2xl">
-			<span class="mx-2 text-yellow"> Gamemode Illustrations </span>
+		<p class="flex justify-start">
+			<HugeiconsIcon icon={QuoteUpIcon} size="23" strokeWidth={2.5} />
+		</p>
+
+		<p class="w-11/12 text-center text-2xl">
+			One of the largest open-lobby events in TETR.IO. Super Streamer Lobby is a custom lobby where
+			TETR.IO streamers and their viewers play side by side, featuring fun, wacky, never-before-seen
+			custom game modes!
+		</p>
+
+		<p class="flex items-end justify-end">
+			<HugeiconsIcon icon={QuoteDownIcon} size="23" strokeWidth={2.5} />
 		</p>
 	</div>
+
+	<p class="bold mt-8 flex items-center text-2xl">
+		<span class="mx-2 text-yellow"> Gamemode Illustration </span>
+	</p>
+
 	<div class="flex w-full flex-row gap-2">
 		<!-- SSL5 Split Squares -->
 		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
@@ -59,19 +74,11 @@
 		</div>
 	</div>
 
-	<div
-		class="mt-8 mb-4 flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
-	>
-		<p class="bold flex items-center text-2xl">
-			<span class="mx-2 text-yellow"> Contestant Prizes </span>
-		</p>
-	</div>
+	<p class="bold mt-8 flex items-center text-2xl">
+		<span class="mx-2 text-yellow">Contestant Prizes</span>
+	</p>
 
-	<div
-		class="mt-8 mb-4 flex flex-row items-center rounded-full border-2 border-dashed border-yellucent px-4 py-2 whitespace-nowrap"
-	>
-		<p class="bold flex items-center text-2xl">
-			<span class="mx-2 text-yellow"> Event Merchandise </span>
-		</p>
-	</div>
+	<p class="bold mt-8 flex items-center text-2xl">
+		<span class="mx-2 text-yellow">Event Merchandise</span>
+	</p>
 </div>
