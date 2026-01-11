@@ -92,7 +92,7 @@
 				><HugeiconsIcon icon={FolderFavouriteIcon} size="15" strokeWidth={1.5} /></span
 			> Project</a
 		>
-		<a
+		<!-- <a
 			href="/pricing"
 			class={clsx([
 				'group flex w-28 cursor-pointer items-center justify-center gap-1 rounded-3xl border-2 border-solid p-1.5 text-center hover:border-pink hover:text-pink',
@@ -101,7 +101,7 @@
 			><span class="text-yellow group-hover:text-pink"
 				><HugeiconsIcon icon={MoneySavingJarIcon} size="15" strokeWidth={1.5} /></span
 			>Pricing</a
-		>
+		> -->
 	</div>
 </header>
 
