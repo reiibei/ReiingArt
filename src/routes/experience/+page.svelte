@@ -1,6 +1,11 @@
 <script>
 	import { HugeiconsIcon } from '@hugeicons/svelte';
-	import { StarsIcon, TimeQuarterPassIcon, Time04Icon } from '@hugeicons/core-free-icons';
+	import {
+		StarsIcon,
+		TimeQuarterPassIcon,
+		Time04Icon,
+		FolderFavouriteIcon
+	} from '@hugeicons/core-free-icons';
 
 	const current = [
 		{
@@ -44,13 +49,13 @@
 			id: 'Intern1',
 			role: 'Lucky Mall MY',
 			name: 'Graphic Design Intern',
-			date: 'Sept 2025 - Dec 2025',
+			date: 'Sept 2025 - Dec 2025'
 		},
 		{
 			id: 'Diploma',
 			role: 'Asia Pacific University of Innovation and Technology',
 			name: 'Diploma in Media and Design (Animation)',
-			date: 'Aug 2023 - Aug 2025',
+			date: 'Aug 2023 - Aug 2025'
 		},
 		{
 			id: 'SSL',
@@ -80,7 +85,13 @@
 					{#if cur.link}
 						<a href={cur.link} target={cur.target} class="w-full">
 							<p class="flex flex-col text-left whitespace-nowrap">
-								<span class="text-2xl font-bold">{cur.name}</span>
+								<span class="flex flex-row items-center gap-2 text-2xl font-bold"
+									><HugeiconsIcon
+										icon={FolderFavouriteIcon}
+										size="20"
+										strokeWidth={2}
+									/>{cur.name}</span
+								>
 								<span class="text-yellow">{cur.role}</span>
 							</p>
 
@@ -125,7 +136,13 @@
 					{#if com.link}
 						<a href={com.link} target={com.target} class="w-full">
 							<p class="flex flex-col text-left whitespace-nowrap">
-								<span class="text-2xl font-bold">{com.name}</span>
+								<span class="flex flex-row items-center gap-2 text-2xl font-bold"
+									><HugeiconsIcon
+										icon={FolderFavouriteIcon}
+										size="20"
+										strokeWidth={2}
+									/>{com.name}</span
+								>
 								<span class="text-yellow">{com.role}</span>
 							</p>
 
