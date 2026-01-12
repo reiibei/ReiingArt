@@ -23,9 +23,10 @@
 		</p>
 
 		<p class="w-11/12 text-center text-2xl">
-			One of the largest open-lobby events in TETR.IO. Super Streamer Lobby is a custom lobby where
-			TETR.IO streamers and their viewers play side by side, featuring fun, wacky, never-before-seen
-			custom game modes!
+			Super Streamer Lobby (SSL) is a recurring community event hosted on TETR.IO and organized by a
+			collective of Tetris community creatives. Featuring limited-time game modes, custom graphics &
+			music, and a line up of hundreds of invited content creators, SSL makes for the largest and
+			most chaotic event in the stacking game community.
 		</p>
 
 		<p class="flex items-end justify-end">
