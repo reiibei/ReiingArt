@@ -142,7 +142,7 @@
 		<!-- DPCP V2 -->
 		<div class="group relative isolate flex aspect-video w-1/3 items-center justify-center">
 			<enhanced:img
-				class="absolute inset-0 -z-10 size-full object-contain p-1 group-hover:opacity-20"
+				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/dpcp-still.png?w=1280;640;400"
 				alt="DupCup"
 			/>
