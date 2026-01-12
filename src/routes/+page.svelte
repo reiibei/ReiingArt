@@ -41,7 +41,7 @@
 		/>
 		<enhanced:img
 			class="aspect-square size-60 rounded-2xl border-5 border-double border-translucent p-1"
-			src="$lib/assets/pfp-trio.png?w=1280;640;400"
+			src="$lib/assets/teto-trio.png?w=1280;640;400"
 			alt="pfp trio"
 		/>
 		<enhanced:img
