@@ -51,10 +51,9 @@
 				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
 			>
 				<p class="text-2xl font-bold text-yellow">Poxmotes</p>
-				<div
-					class="flex w-11/12 flex-col items-center justify-center text-center whitespace-nowrap"
-				>
-					<p>Discord, YouTube & Twitch compatible ദ്ദി(｡•̀ ᗜ&lt;)</p>
+				<div class="flex w-11/12 flex-col items-center justify-center text-center">
+					<p class="whitespace-nowrap">Discord, YouTube & Twitch</p>
+					<p>compatible ദ്ദി(｡•̀ ᗜ&lt;)</p>
 				</div>
 				<div class="flex flex-row items-center justify-center gap-1">
 					<a
@@ -100,7 +99,7 @@
 			<enhanced:img
 				class="absolute inset-0 -z-10 size-full object-contain group-hover:opacity-20"
 				src="$lib/assets/pfp-teto.png?w=1280;640;400"
-				alt="pfp teto nom"
+				alt="teto nom"
 			/>
 			<div
 				class="flex flex-col items-center justify-center gap-1 opacity-0 group-hover:opacity-100"
